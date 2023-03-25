@@ -1,0 +1,45 @@
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Cambio de la altura */
+    }
+    
+    .service {
+    position: relative;
+    height: 33.33%;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* add box-shadow */
+    }
+    
+    .service img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    }
+    
+    .service h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0; 
+ 
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    }
+    
+    .serviceTitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent; /* hace el fondo transparente /
+    padding: 0 0.5rem;
+    text-align: left; / alinea el texto a la izquierda /
+    z-index: 1; / add z-index to make text appear on top of image */
+    }
