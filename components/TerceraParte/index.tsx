@@ -50,7 +50,9 @@ const ServiceTitle = styled.h3`
   bottom: 0;
   left: 0;
   padding: 0;
+  
   background-color: rgba(0, 0, 0, 0.8);
+  margin-bottom: -.06rem;
   font-size: 2rem;
   font-weight: bold;
   text-align: left;
@@ -81,7 +83,7 @@ function Terceraparte() {
       </div>
       <ImageContainer>
         <Service>
-          <ServiceImage src="/assets/sala.jpg" alt="Servicio 1" width={1444} height={800} />
+          <ServiceImage src="/assets/sala.jpg" alt="Servicio 1" width={1444} height={800}/>
           <ServiceTitle>Diseño de interiores</ServiceTitle>
         </Service>
         <Service>
