@@ -38,6 +38,7 @@ const Title = styled.h1`
   margin-bottom: 0;
 `;
 
+
 const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -92,6 +93,16 @@ const ServiceTitle = styled.div`
     font-size: 2rem; 
     margin-bottom: 0.5rem; 
   }
+  h4{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+    text-align: left;
+    color: white;
+    font-size: 2rem; 
+    margin-bottom: 0.5rem;
+  }
   
   p {
     font-size: 1.6rem;
@@ -105,7 +116,10 @@ const ServiceTitle = styled.div`
   @media (max-width: 640px) {
     padding: 1rem;
     h3 {
-      font-size: 2rem;
+      font-size: 1.6rem;
+    }
+    h4 {
+      font-size: 1rem;
     }
     p {
       font-size: 1.2rem;
@@ -131,7 +145,7 @@ function index() {
               alt="Imagen 1"
             />
             <ServiceTitle>
-              <h3>Arquitectura - Preventa</h3>
+              <h4>Arquitectura - Preventa</h4>
               <h3>Loft</h3>
               <p>Santiago de Querétaro, Qro.</p>
             </ServiceTitle>
@@ -144,7 +158,7 @@ function index() {
               alt="Imagen 2"
             />
             <ServiceTitle>
-              <h3>Interiorismo</h3>
+              <h4>Interiorismo</h4>
               <h3>Casa Big Sur</h3>
               <p>Santiago de Querétaro, Qro.</p>
             </ServiceTitle>
@@ -157,7 +171,7 @@ function index() {
               alt="Imagen 3"
             />
             <ServiceTitle>
-              <h3>Arquitectura</h3>
+              <h4>Arquitectura</h4>
               <h3>Casa Alegre</h3>
               <p>Santiago de Querétaro, Qro.</p>
 </ServiceTitle>
