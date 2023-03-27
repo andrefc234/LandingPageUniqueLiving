@@ -1,8 +1,13 @@
+import { Container } from "react-bootstrap"
+
 export default function PrimeraParte(): JSX.Element {
   return (
+   
     <div style={{ 
       backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/assets/fA_Photo11.jpg")`, 
       backgroundSize: 'cover', 
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
       minHeight: '100vh',
       display: 'flex',
       justifyContent: 'center',
@@ -27,5 +32,6 @@ export default function PrimeraParte(): JSX.Element {
         <p className="text-white ml-3 h6 sm:text-xl md:text-2xl" style={{ fontSize: '1.5em' }}>Santiago de Querétaro, Qro.</p>
       </div>
     </div>
+ 
   );
 }

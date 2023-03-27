@@ -1,4 +1,4 @@
-import { Row, Col, Image } from 'react-bootstrap';
+import { Row, Col, Image, Container } from 'react-bootstrap';
 
 interface Props {
   imageSrc: string;
@@ -11,7 +11,8 @@ interface Props {
 
 function Index({ imageSrc, title, descriptionn }: Props) {
   return (
-    <Row className="align-items-center">
+    <Container fluid className="bg-white">
+    <Row  className="align-items-center" style={{ background: `url('/assets/mosaico1.jpg') repeat-x` }}>
       <Col md={6}>
         <Image src={imageSrc} alt="Imagen" fluid />
       </Col>
@@ -23,6 +24,7 @@ function Index({ imageSrc, title, descriptionn }: Props) {
         </p>
       </Col>
     </Row>
+    </Container>
   );
 }
 

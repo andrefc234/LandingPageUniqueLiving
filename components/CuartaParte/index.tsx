@@ -27,10 +27,9 @@ const Col = styled.div`
   }
 
   @media (max-width: 640px) {
-    max-width: 50%;
+    max-width: 33.3333%;
   }
 `;
-
 
 const Title = styled.h1`
   font-size: 3rem;
@@ -38,14 +37,11 @@ const Title = styled.h1`
   margin-bottom: 0;
 `;
 
-
 const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: -1rem -1rem;
 `;
-
-
 
 const Service = styled.div`
   position: relative;
@@ -93,16 +89,7 @@ const ServiceTitle = styled.div`
     font-size: 2rem; 
     margin-bottom: 0.5rem; 
   }
-  h4{
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0 0 1rem 0;
-    line-height: 1.2;
-    text-align: left;
-    color: white;
-    font-size: 2rem; 
-    margin-bottom: 0.5rem;
-  }
+
   
   p {
     font-size: 1.6rem;
@@ -116,10 +103,11 @@ const ServiceTitle = styled.div`
   @media (max-width: 640px) {
     padding: 1rem;
     h3 {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
     h4 {
       font-size: 1rem;
+      color: white;
     }
     p {
       font-size: 1.2rem;
@@ -134,7 +122,7 @@ const ServiceTitle = styled.div`
 function index() {
   return (
     <>
-      <Container>
+      <Container className="bg-white">
         <Title>Proyectos</Title>
       </Container>
       <Row>
