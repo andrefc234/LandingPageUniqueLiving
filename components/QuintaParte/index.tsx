@@ -15,6 +15,11 @@ import { Container } from 'react-bootstrap';
 function QuintaParte() {
   return (
     <Container fluid className="bg-white">
+          <div>
+      <div style={{backgroundImage:'url("/assets/mosaico1.jpg")'}} className='text-center p-5'>
+        <h1 className="text-3xl font-bold mb-0">Nuestro Proceso</h1>
+      </div>
+      </div>
       <div className="text-center">
         <div style={{ display: 'inline-block' }}>
           <div className="mx-4 p-4 border-2 border-solid border-brown-600 rounded-lg">
