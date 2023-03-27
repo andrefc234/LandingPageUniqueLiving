@@ -12,7 +12,7 @@ interface SegundaparteProps {
 
 function Segundaparte({ title, description, imageSrc }: SegundaparteProps) {
   return (
-    <Container fluid>
+    <Container  fluid className="bg-white">
       <Row className="align-items-center">
         <Col md={6} className="p-3">
           <div className="p-4">

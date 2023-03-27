@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
+import { Container } from 'react-bootstrap';
 
 const ImageContainer = styled.div`
   display: flex;
@@ -46,7 +47,7 @@ const ServiceImage = styled(Image)`
 
 const ServiceTitle = styled.h3`
   position: absolute;
-  bottom: -1;
+  bottom: 0;
   left: 0;
   padding: 0;
   background-color: rgba(0, 0, 0, 0.8);
@@ -68,14 +69,14 @@ const ServiceTitle = styled.h3`
 
   @media (max-width: 640px) {
     font-size: 1.5rem;
-    bottom: -1;
   }
 `;
 
 function Terceraparte() {
   return (
+    <Container fluid className="bg-white">
     <div>
-      <div style={{backgroundImage:' url("/assets/mosaico1.jpg'}} className='text-center p-5'>
+      <div style={{backgroundImage:'url("/assets/mosaico1.jpg")'}} className='text-center p-5'>
         <h1 className="text-3xl font-bold mb-0">Nuestros Servicios</h1>
       </div>
       <ImageContainer>
@@ -93,6 +94,7 @@ function Terceraparte() {
         </Service>
       </ImageContainer>
     </div>
+    </Container>
   );
 }
 

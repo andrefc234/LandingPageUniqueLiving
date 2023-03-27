@@ -1,11 +1,34 @@
 import styled from 'styled-components';
 
+
 const Container = styled.div`
   background-image: url('/assets/mosaico1.jpg');
   background-size: cover;
   background-position: center;
   text-align: center;
   padding: 5rem 0;
+
+  @media (max-width: 960px) {
+    padding: 2rem 0;
+  }
+
+  @media (max-width: 640px) {
+    padding: 1rem 0;
+  }
+`;
+
+const Col = styled.div`
+  flex: 1;
+  max-width: 33.3333%;
+  padding: 0rem;
+
+  @media (max-width: 960px) {
+    max-width: 100%;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 33.3333%;
+  }
 `;
 
 const Title = styled.h1`
@@ -18,18 +41,6 @@ const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: -1rem -1rem;
-`;
-
-const Col = styled.div`
-  flex: 1;
-  max-width: 33.3333%;
-  padding: 0rem;
-  @media (max-width: 960px) {
-    max-width: 50%;
-  }
-  @media (max-width: 640px) {
-    max-width: 100%;
-  }
 `;
 
 const Service = styled.div`
@@ -66,6 +77,7 @@ const ServiceTitle = styled.div`
   padding: 2rem;
   opacity: 1;
   transition: opacity 0.3s ease;
+  height: 100%;
 
   h3 {
     font-size: 3rem;
@@ -74,23 +86,43 @@ const ServiceTitle = styled.div`
     line-height: 1.2;
     text-align: left;
     color: white;
+    font-size: 2rem; 
+    margin-bottom: 0.5rem; 
   }
+
   
   p {
     font-size: 1.6rem;
     margin: 0;
     text-align: left;
     color: white;
+    font-size: 1.4rem; 
+    margin-bottom: 0; 
+  }
+
+  @media (max-width: 640px) {
+    padding: 1rem;
+    h3 {
+      font-size: 1.8rem;
+    }
+    h4 {
+      font-size: 1rem;
+      color: white;
+    }
+    p {
+      font-size: 1.2rem;
+    }
   }
 
   &:hover {
     opacity: 0.8;
   }
 `;
+
 function index() {
   return (
     <>
-      <Container>
+      <Container className="bg-white">
         <Title>Proyectos</Title>
       </Container>
       <Row>
@@ -101,7 +133,7 @@ function index() {
               alt="Imagen 1"
             />
             <ServiceTitle>
-              <h3>Arquitectura - Preventa</h3>
+              <h4>Arquitectura - Preventa</h4>
               <h3>Loft</h3>
               <p>Santiago de Querétaro, Qro.</p>
             </ServiceTitle>
@@ -114,7 +146,7 @@ function index() {
               alt="Imagen 2"
             />
             <ServiceTitle>
-              <h3>Interiorismo</h3>
+              <h4>Interiorismo</h4>
               <h3>Casa Big Sur</h3>
               <p>Santiago de Querétaro, Qro.</p>
             </ServiceTitle>
@@ -127,7 +159,7 @@ function index() {
               alt="Imagen 3"
             />
             <ServiceTitle>
-              <h3>Arquitectura</h3>
+              <h4>Arquitectura</h4>
               <h3>Casa Alegre</h3>
               <p>Santiago de Querétaro, Qro.</p>
 </ServiceTitle>

@@ -5,9 +5,16 @@ import { MdBuild } from 'react-icons/md';
 import { BsFillHouseCheckFill } from 'react-icons/bs';
 import { Container } from 'react-bootstrap';
 
+
+
+
+
+
+
+
 function QuintaParte() {
   return (
-    <Container fluid className="bg-transparent">
+    <Container fluid className="bg-white">
       <div className="text-center">
         <div style={{ display: 'inline-block' }}>
           <div className="mx-4 p-4 border-2 border-solid border-brown-600 rounded-lg">
