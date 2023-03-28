@@ -59,12 +59,19 @@ const ContactWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const ContactItem = styled.div`
   display: flex;
   align-items: center;
   margin-right: 1rem;
+  @media only screen and (max-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 `;
 
 const ContactIcon = styled.img`
