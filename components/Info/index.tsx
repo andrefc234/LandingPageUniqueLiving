@@ -16,14 +16,21 @@ const Description = styled.p`
 
 const InfoWrapper = styled.div`
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 2rem;
+`;
+
+const MapWrapper = styled.div`
+  display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin-right: 2rem;
 `;
 
 const MapImage = styled.img`
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
   margin-bottom: 1rem;
 `;
 
@@ -33,17 +40,25 @@ const Address = styled.p`
   margin-bottom: 1rem;
 `;
 
-const Hours = styled.p`
+const HoursWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const HoursTitle = styled.i`
   font-size: 1.2rem;
-  text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+`;
+
+const HoursText = styled.p`
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 `;
 
 const ContactWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 500px;
+  justify-content: center;
+  align-items: center;
 `;
 
 const ContactItem = styled.div`
@@ -75,40 +90,45 @@ function Info() {
         un espacio único y quedar enamorado.
       </Description>
       <InfoWrapper>
-        <MapImage src="/assets/mapsicleMap.jpg" alt="Map" />
-        <Address>
-          Blvd. Bernardo Quintana 9691, Local 9 y 10, Centro Sur, 76090 Santiago
-          de Querétaro, Qro.
-        </Address>
-        <Hours>
-          <i>
-            Horarios
+        <MapWrapper>
+          <MapImage src="/assets/mapsicleMap.jpg" alt="Map" />
+          <Address>
+            Blvd. Bernardo Quintana 9691, Local 9 y 10, Centro Sur, 76090
+            Santiago de Querétaro, Qro.
+          </Address>
+        </MapWrapper>
+        <HoursWrapper>
+          <HoursTitle>Horarios</HoursTitle>
+          <HoursText>
+            <i>Lunes-Viernes</i>
             <br />
-            Lunes-Viernes
-          </i>
-          <br /> 9:00am-15:00pm <br />
-          <i>Sábado</i>
-          <br /> 10:00am-14:00pm
-        </Hours>
-        <ContactWrapper>
-          <ContactItem>
-            <ContactIcon src="/assets/whatsApp.jpg" alt="Phone" />
-            <ContactText>4427492083</ContactText>
-          </ContactItem>
-          <ContactItem>
-            <ContactIcon src="/assets/facebook.jpg" alt="Email" />
-            <ContactText>Unique Living</ContactText>
-          </ContactItem>
-          <ContactItem>
-            <ContactIcon src="/assets/instagram.jpg" alt="Twitter" />
-            <ContactText>@uniqueliving_qro</ContactText>
-          </ContactItem>
-          <ContactItem>
-            <ContactIcon src="/assets/mail.jpg" alt="Facebook" />
-            <ContactText>ventas@unique-living.mx</ContactText>
-          </ContactItem>
-        </ContactWrapper>
+            9:00am-15:00pm
+          </HoursText>
+          <HoursText>
+            <i>Sábado</i>
+            <br />
+            10:00am-14:00pm
+          </HoursText>
+        </HoursWrapper>
       </InfoWrapper>
+      <ContactWrapper>
+        <ContactItem>
+          <ContactIcon src="/assets/whatsApp.jpg" alt="Phone" />
+          <ContactText>4427492083</ContactText>
+        </ContactItem>
+        <ContactItem>
+          <ContactIcon src="/assets/facebook.jpg" alt="Email" />
+          <ContactText>Unique Living</ContactText>
+        </ContactItem>
+        <ContactItem>
+          <ContactIcon src="/assets/instagram.jpg" alt="Twitter" />
+          <ContactText>@uniqueliving_qro</ContactText>
+        </ContactItem>
+        <ContactItem>
+          <ContactIcon src="/assets/mail.jpg" alt="Facebook" />
+          <ContactText>ventas@unique-living.mx</ContactText>
+        </ContactItem>
+      </ContactWrapper>
     </Container>
   );
 }
