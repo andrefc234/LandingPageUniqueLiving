@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 import { Container } from 'react-bootstrap';
-
+import { useSpring, animated } from '@react-spring/web';
+import { useInView } from 'react-intersection-observer';
 const ImageContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -47,12 +48,12 @@ const ServiceImage = styled(Image)`
 
 const ServiceTitle = styled.h3`
   position: absolute;
-  bottom: 0;
+  bottom: 100;
   left: 0;
   padding: 0;
   
   background-color: rgba(0, 0, 0, 0.8);
-  margin-bottom: -.06rem;
+  margin-bottom: -.05rem;
   font-size: 2rem;
   font-weight: bold;
   text-align: left;
@@ -75,17 +76,31 @@ const ServiceTitle = styled.h3`
 `;
 
 function Terceraparte() {
+  const [ref, inView] = useInView({
+    threshold: 0.2, // Trigger when 50% of the component is visible
+    triggerOnce: false, // Only trigger once
+  });
+
+  const props = useSpring({
+    opacity: inView ? 1 : 0,
+    from: { opacity: 0 },
+    config: { duration: 1000 },
+  });
+
   return (
     <Container fluid className="bg-white">
+      <animated.div ref={ref} style={props}>
     <div>
       <div style={{backgroundImage:'url("/assets/mosaico1.jpg")'}} className='text-center p-5'>
         <h1 className="text-3xl font-bold mb-0">Nuestros Servicios</h1>
       </div>
       <ImageContainer>
+      
         <Service>
           <ServiceImage src="/assets/sala.jpg" alt="Servicio 1" width={1444} height={800}/>
           <ServiceTitle>Diseño de interiores</ServiceTitle>
         </Service>
+        
         <Service>
           <ServiceImage src="/assets/fA_Photo41.jpg" alt="Servicio 2" width={1444} height={800} />
           <ServiceTitle>Arquitectura</ServiceTitle>
@@ -96,6 +111,7 @@ function Terceraparte() {
         </Service>
       </ImageContainer>
     </div>
+    </animated.div>
     </Container>
   );
 }
