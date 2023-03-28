@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/web": "^9.7.1",
     "@types/node": "18.15.7",
     "@types/react": "18.0.29",
     "@types/react-dom": "18.0.11",
@@ -21,6 +22,8 @@
     "react-bootstrap": "^2.7.2",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
+    "react-intersection-observer": "^9.4.3",
+    "react-spring": "^9.7.1",
     "styled-components": "^5.3.9",
     "typescript": "5.0.2"
   }
