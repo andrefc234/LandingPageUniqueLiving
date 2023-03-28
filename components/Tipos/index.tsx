@@ -1,5 +1,14 @@
 import styled from 'styled-components';
 
+const ImageOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* opacidad del 50% */
+`;
+
 const Container = styled.div`
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('/assets/persianas41.jpg');
@@ -33,11 +42,6 @@ const ImageContainer = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 0.9)
-  );
 `;
 
 const Image = styled.img`
@@ -89,6 +93,7 @@ function Index() {
           <ImageWrapper>
             <ImageContainer>
               <Image src="/assets/casacarro.jpg" alt="Image 1" />
+              <ImageOverlay />
             </ImageContainer>
             <TitleContainer1>
               <Title>Preventa</Title>
@@ -108,6 +113,7 @@ function Index() {
           <ImageWrapper>
             <ImageContainer>
               <Image src="/assets/casablanca.jpg" alt="Image 2" />
+              <ImageOverlay />
             </ImageContainer>
             <TitleContainer>
               <Title>Arquitectura</Title>
@@ -123,6 +129,7 @@ function Index() {
           <ImageWrapper>
             <ImageContainer>
               <Image src="/assets/sala2.jpg" alt="Image 3" />
+              <ImageOverlay />
             </ImageContainer>
             <TitleContainer3>
               <Title>Interiorismo</Title>
