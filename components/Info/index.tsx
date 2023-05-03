@@ -86,16 +86,6 @@ const ContactText = styled.p`
 function Info() {
   return (
     <Container>
-      <Description>
-        Unique Living es más que un estudio arquitectónico y diseño de
-        interiores, somos amantes de los procesos creativos. Buscamos que las
-        emociones se queden proyectadas dentro de cada diseño creado.
-      </Description>
-      <Description>
-        A través de un proceso simple queremos captar la esencia de nuestros
-        clientes y así crear un reflejo arquitectónico en el cual puedas sentir
-        un espacio único y quedar enamorado.
-      </Description>
       <InfoWrapper>
         <MapWrapper>
           <MapImage src="/assets/mapsicleMap.jpg" alt="Map" />

@@ -32,6 +32,10 @@ const Container = styled.div`
 const StyledSpan = styled.span`
   color: #bf806b;
 `;
+const StyledImg = styled.img`
+  width: 100vw;
+  margin: 0;
+`;
 
 const TwoImages = () => {
   return (
@@ -54,6 +58,7 @@ const TwoImages = () => {
         </Paragraph>
         <br />
         <br />
+        <StyledImg src="./assets/construccion1.png" alt="My Image" />
       </Container>
     </>
   );
