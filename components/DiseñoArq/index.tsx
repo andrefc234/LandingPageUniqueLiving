@@ -23,7 +23,7 @@ export default function index(): JSX.Element {
         <Parte4 />
       </div>
       <div>
-        <Parte5 src="./assets/casacortada.png" />
+        <Parte5 />
       </div>
       <div>
         <Info />

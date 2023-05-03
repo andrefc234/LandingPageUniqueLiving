@@ -41,13 +41,18 @@ const Paragraph = styled.p`
   margin-top: 10px;
   font-size: 30px;
 `;
+const Icon2 = styled.img`
+  width: 100px;
+  height: 100px;
+  margin-top: 26px;
+`;
 
 const MyComponent = () => {
   return (
     <Container>
       <IconSection>
         <IconWrapper>
-          <Icon src="./assets/instagram.jpg" alt="icon1" />
+          <Icon2 src="./assets/instagram.jpg" alt="icon1" />
           <Title>
             Diseño <br /> Arquitectonico
           </Title>
