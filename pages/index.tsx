@@ -3,12 +3,12 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Layout from '../components/Layout'
-import Terceraparte from '../components/TerceraParte'
-import CuartaParte from '../components/CuartaParte'
-import QuintaParte from '../components/QuintaParte/index'
-import SextaParte from '../components/SextaParte'
-import PrimeraParte from '../components/Primeraparte'
-import SegundaParte from '../components/Segundaparte'
+import Terceraparte from '../components/Index/TerceraParte'
+import CuartaParte from '../components/Index/CuartaParte'
+import QuintaParte from '../components/Index/QuintaParte/index'
+import SextaParte from '../components/Index/SextaParte'
+import PrimeraParte from '../components/Index/Primeraparte'
+import SegundaParte from '../components/Index/Segundaparte'
 
 const inter = Inter({ subsets: ['latin'] })
 

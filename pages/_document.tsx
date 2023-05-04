@@ -38,7 +38,9 @@ return (
 <Head >
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet"/> 
+
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet"/> 
 </Head>
 <body>
 <Main />
