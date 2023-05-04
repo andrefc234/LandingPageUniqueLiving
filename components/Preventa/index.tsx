@@ -1,3 +1,4 @@
+
 import Navb from '../MainComponents/NavB';
 import Preventa1 from './Preventa1';
 import Preventa2 from './Preventa2';
@@ -24,6 +25,7 @@ export default function index(): JSX.Element {
         <Preventa2 />
       </div>
       <div>
+
         <Gallery  images={images} height='100%' marginB='0%' />
       </div>
       <div>

@@ -1,3 +1,4 @@
+
 import Navb from '../MainComponents/NavB';
 import ImageTitle from '../MainComponents/ImageTitle'
 import Parte2 from '../DiseñoArq/Parte2';
@@ -12,13 +13,13 @@ export default function index(): JSX.Element {
     <div>
       <Navb />
       <div>
+
       <ImageTitle
  img={"./assets/inicio.png"}
  title={<>
   Diseño <br />
         Arquitectonico
  </>}
- />
       </div>
       <div>
         <Parte2 />

@@ -1,3 +1,4 @@
+
 import Navb from '../MainComponents/NavB';
 import Tipos from './Tipos';
 import Info from '../MainComponents/Info';

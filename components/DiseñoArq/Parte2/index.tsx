@@ -2,22 +2,28 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   height: 100vh;
   background-color: white;
 `;
 
 const IconSection = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top:10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const IconWrapper = styled.div`
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 40px;
+
 `;
 
 const Icon = styled.img`
@@ -28,32 +34,30 @@ const Icon = styled.img`
 const Title = styled.h2`
   font-size: 24px;
   font-weight: bold;
-  font-family: 'Montserrat';
   margin-top: 20px;
   text-align: center;
 `;
 
 const Paragraph = styled.p`
   text-align: center;
-  margin-top: 10%;
-  font-family: 'Montserrat';
+  margin-top: 10px;
   font-size: 30px;
 `;
-
 const Icon2 = styled.img`
   width: 100px;
   height: 100px;
+  margin-top: 26px;
 `;
-
 
 const MyComponent = () => {
   return (
     <Container>
-      <IconSection >
-        <IconWrapper >
+      <IconSection>
+        <IconWrapper>
           <Icon2 src="./assets/instagram.jpg" alt="icon1" />
           <Title>
-            Diseño Arquitectonico
+            Diseño <br /> Arquitectonico
+
           </Title>
         </IconWrapper>
         <IconWrapper>
