@@ -22,7 +22,8 @@ export default function index() {
         expand="lg"
       >
         <div className="d-flex justify-content-start align-items-center">
-          <Navbar.Brand href="#">
+
+          <Navbar.Brand href="/" >
             <img
               alt=""
               src="/assets/logo04_11.jpg"
@@ -43,23 +44,13 @@ export default function index() {
           className="justify-content-end"
         >
           <Nav className="mr-auto"></Nav>
-          <Nav className="justify-content-end" style={{ marginRight: '5rem' }}>
-            <Nav.Link
-              href="#about"
-              className="text-white font-weight-bold pr-5"
-            >
-              Servicios
-            </Nav.Link>
-            <Nav.Link href="#services" className="text-white px-5">
-              Preventa
-            </Nav.Link>
-            <Button
-              variant="secondary"
-              className="px-5"
-              style={{ backgroundColor: '#EADC8C', outlineColor: '#EADC8C' }}
-            >
-              Contacto
-            </Button>
+
+          <Nav className="justify-content-end" style={{marginRight:'5rem'}}>
+            <Nav.Link href="/servicios" className="text-white font-weight-bold "style={{fontFamily:'Montserrat',fontWeight:1000}}>Servicios</Nav.Link>
+            <Nav.Link href="/preventa" className="text-white "style={{fontFamily:'Montserrat',fontWeight:1000}}>Preventa</Nav.Link>
+            <Nav.Link href="/interiorismo" className="text-white "style={{fontFamily:'Montserrat',fontWeight:1000}}>Interiorismo</Nav.Link>
+            <Nav.Link href="/disenio" className="text-white "style={{fontFamily:'Montserrat',fontWeight:1000}}>Arquitectura</Nav.Link>
+            <Button variant='secondary' className='px-5 mx-4 text-dark'style={{ backgroundColor: '#EADC8C',fontWeight:1000, outlineColor: '#EADC8C',fontFamily:'Montserrat' }}>Contacto</Button>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -6,6 +6,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   height: 100vh;
   background-color: white;
 `;
@@ -22,6 +23,7 @@ const IconWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 40px;
+
 `;
 
 const Icon = styled.img`
@@ -55,6 +57,7 @@ const MyComponent = () => {
           <Icon2 src="./assets/instagram.jpg" alt="icon1" />
           <Title>
             Diseño <br /> Arquitectonico
+
           </Title>
         </IconWrapper>
         <IconWrapper>

@@ -1,29 +1,73 @@
-import Navb from '../NavB';
-import Inicio from '../DiseñoArq/Inicio';
-import Parte2 from '../DiseñoArq/Parte2';
-import Parte3 from '../DiseñoArq/Parte3';
-import Parte4 from '../DiseñoArq/Parte4';
-import Parte5 from '../DiseñoArq/Parte5';
-import Info from '../Info';
 
+import Navb from '../MainComponents/NavB';
+import ImageTitle from '../MainComponents/ImageTitle'
+import Parte2 from '../DiseñoArq/Parte2';
+import Gallery from '../MainComponents/Gallery'
+import MasInfo from '../MainComponents/MasInfo'
+import Presentacion from '../MainComponents/Presentacion'
+import Info from '../MainComponents/Info';
+import Mosaico from '../MainComponents/Mosaico';
 export default function index(): JSX.Element {
+  const images = ['./assets/dibujo.png', './assets/nodibujo.png'];
   return (
     <div>
       <Navb />
       <div>
-        <Inicio />
+
+      <ImageTitle
+ img={"./assets/inicio.png"}
+ title={<>
+  Diseño <br />
+        Arquitectonico
+ </>}
       </div>
       <div>
         <Parte2 />
       </div>
       <div>
-        <Parte3 />
+      <Gallery images={images}
+      height='100%'
+      marginB='0%'
+      />
       </div>
       <div>
-        <Parte4 />
+        <Mosaico
+         paragraph={
+          " ¡Construyendo con estructura metálica te aseguramos mayor"
+         }
+         
+         paragraph2="y "
+         styledspan1="seguridad estructural"
+         styledspan2="reducción de costos!"/>
       </div>
       <div>
-        <Parte5 />
+      <MasInfo
+    img={"./assets/construccion1.png"}
+    subtitle1={'Nuestros'}
+    spansubtitle='servicios'
+    subtitle2='incluyen'
+    item1={<>
+     <b>Desarrollo</b> del concepto
+    </>}
+    item2={<>
+      <b>Gestión</b> del proyecto
+    </>}
+    item3={<>
+      <b>Construcción</b> de tu nueva casa
+    </>}
+     item4={<>
+       <b>Seguimiento</b> post-entrega
+    </>}
+    title='¡Te ayudamos a construir tu casa soñada!'
+    
+    />
+      </div>
+      <div>
+      <Presentacion
+    img={"./assets/casacortada.png"}
+    titlespan={"¡Ahorra y construye"}
+    title={"con nosotros!"}
+    />
       </div>
       <div>
         <Info />
