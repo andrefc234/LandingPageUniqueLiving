@@ -1,6 +1,6 @@
-import Navb from '../NavB';
-import Tipos from '../Tipos';
-import Info from '../Info';
+import Navb from '../MainComponents/NavB';
+import Tipos from './Tipos';
+import Info from '../MainComponents/Info';
 export default function index(): JSX.Element {
   return (
     <div>

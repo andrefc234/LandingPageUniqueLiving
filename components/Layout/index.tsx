@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import Navbar from '../NavB';
-import Loader from '../Loader';
+import Navbar from '../MainComponents/NavB';
+import Loader from '../MainComponents/Loader';
 import { useRouter } from 'next/router';
 
 interface Props {

@@ -1,10 +1,11 @@
-import Navb from '../NavB';
-import ImageTitle from '../ImageTitle'
+import Navb from '../MainComponents/NavB';
+import ImageTitle from '../MainComponents/ImageTitle'
 
-import Gallery from '../Gallery'
-import MasInfo from '../MasInfo'
-import Presentacion from '../Presentacion'
-import Info from '../Info';
+import Gallery from '../MainComponents/Gallery'
+import MasInfo from '../MainComponents/MasInfo'
+import Presentacion from '../MainComponents/Presentacion'
+import Info from '../MainComponents/Info';
+import Mosaico from '../MainComponents/Mosaico';
 import Part2 from './Part2'
 export default function index(): JSX.Element {
   const images = ['./assets/inter1.jpg', './assets/inter2.jpg','./assets/inter3.jpg'];
@@ -40,14 +41,21 @@ export default function index(): JSX.Element {
      />
       </div>
       <div>
-      <Gallery images={images} paragraph={
-       "Para una "
-      }
-      
-      paragraph2="diseñamos tus espacios "
-      styledspan1="experencia unica"
-      styledspan2="optimizando recursos"
+      <Gallery images={images}
+        height={'130%'}
+        marginB='7%'
       />
+      </div>
+      <div>
+        <Mosaico
+         paragraph={
+          "Para una "
+         }
+         
+         paragraph2="diseñamos tus espacios "
+         styledspan1="experencia unica"
+         styledspan2="optimizando recursos"
+        />
       </div>
       <div>
       <MasInfo

@@ -13,15 +13,27 @@ const StyledCarouselItem = styled(Carousel.Item)`
       height: 100vh;
       object-fit: cover;
     }
+    .text-left {
+      text-align: left;
+    }
   }
-  
 `;
 const Loader = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+
   height: 100vh;
 `;
+const StyledCarousel = styled(Carousel)`
+  &&& {
+    .carousel-indicators {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 3%;
+
+    }
+  }
+`;
+
 
 
 const MyCarousel = () => {
@@ -57,31 +69,31 @@ const MyCarousel = () => {
       </Loader>
     ) : (<>
     <animated.div ref={ref} style={props}>
-      <Carousel activeIndex={index} onSelect={handleSelect} fade className="intro">
+      <StyledCarousel activeIndex={index} onSelect={handleSelect} fade className="intro">
       <StyledCarouselItem>
         <img src="/assets/fA_Photo11.jpg" alt="First slide" />
-        <Carousel.Caption>
-          <p className="text-white ml-3 h1 sm:text-4xl md:text-5xl">Arquitectura</p>
-          <p className="text-white ml-3 font-weight-bold leading-tight h3 sm:text-6xl md:text-7xl">Casa Cantera</p>
-          <p className="text-white ml-3 h6 sm:text-2xl md:text-3xl">Santiago de Querétaro, Qro.</p>
+        <Carousel.Caption className='text-left mb-5'>
+          <p className="text-white ml-3 h1 sm:text-4xl md:text-5xl" style={{fontFamily:'Montserrat',textShadow:'40px 40px 80px black',fontWeight:'bold'}}>Arquitectura</p>
+          <p className="text-white ml-3 font-weight-bold leading-tight h3 sm:text-6xl md:text-7xl" style={{fontFamily:'Raleway',textShadow:'40px 40px 80px black'}}>Casa Cantera</p>
+          <p className="text-white ml-3 h6 sm:text-2xl md:text-3xl"style={{fontFamily:'Raleway'}}>Santiago de Querétaro, Qro.</p>
         </Carousel.Caption>
       </StyledCarouselItem>
       <StyledCarouselItem>
         <img src="/assets/_28012018_DSC02202.jpg" alt="Second slide" />
-        <Carousel.Caption>
-          <p className="text-white ml-3 h1 sm:text-4xl md:text-5xl">Interiorismo</p>
-          <p>Santiago de Querétaro, Qro.</p>
+        <Carousel.Caption className='text-left mb-5'>
+          <p className="text-white ml-3 h1 sm:text-4xl md:text-5xl" style={{fontFamily:'Montserrat',textShadow:'40px 40px 80px black',fontWeight:'bold'}}>Interiorismo</p>
+          <p className="text-white ml-3 h6 sm:text-2xl md:text-3xl" style={{fontFamily:'Raleway'}}>Santiago de Querétaro, Qro.</p>
         </Carousel.Caption>
       </StyledCarouselItem>
       <StyledCarouselItem>
         <img src="/assets/l1_Photo11.jpg " alt="Third slide" />
-        <Carousel.Caption>
-          <p className="text-white ml-3 h1 sm:text-4xl md:text-5xl">Arquitectura - Preventa</p>
-          <p className="text-white ml-3 font-weight-bold leading-tight h3 sm:text-6xl md:text-7xl">Loft</p>
-          <p className="text-white ml-3 h6 sm:text-2xl md:text-3xl">Santiago de Querétaro, Qro.</p>
+        <Carousel.Caption className='text-left mb-5'>
+          <p className="text-white ml-3 h1 sm:text-4xl md:text-5xl " style={{fontFamily:'Montserrat',textShadow:'40px 40px 80px black',fontWeight:'bold'}}>Arquitectura - Preventa</p>
+          <p className="text-white ml-3 font-weight-bold leading-tight h3 sm:text-6xl md:text-7xl" style={{fontFamily:'Raleway'}}>Loft</p>
+          <p className="text-white ml-3 h6 sm:text-2xl md:text-3xl" style={{fontFamily:'Raleway'}}>Santiago de Querétaro, Qro.</p>
         </Carousel.Caption>
       </StyledCarouselItem>
-    </Carousel>
+    </StyledCarousel>
     </animated.div>
       </>)}
    </>
