@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Col,Row} from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap';
 const Title = styled.h1`
   font-size: 32px;
   font-weight: bold;
@@ -44,43 +44,61 @@ const Button = styled.button`
   border: none;
   border-radius: 5px;
   margin: 245px;
-  width:15rem;
+  width: 15rem;
   cursor: pointer;
-  margin-top:14%;
- box-shadow: 7px 7px 10px black;
+  margin-top: 14%;
+  box-shadow: 7px 7px 10px black;
   white-space: nowrap;
 `;
-import {HiOutlinePresentationChartLine} from 'react-icons/hi'
-import {BsWhatsapp} from 'react-icons/bs'
+const Button1 = styled.button`
+  background-color: #bf806b;
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 245px;
+  width: 15rem;
+  cursor: pointer;
+  margin-top: 29%;
+  box-shadow: 7px 7px 10px black;
+  white-space: nowrap;
+`;
+import { HiOutlinePresentationChartLine } from 'react-icons/hi';
+import { BsWhatsapp } from 'react-icons/bs';
 const Icon = styled.i`
   margin-right: 10px;
 `;
 const StyledSpan = styled.span`
   color: #bf806b;
 `;
-interface Props{
-    titlespan:string;
-    title:string;
-    img:string;
-
+interface Props {
+  titlespan: string;
+  title: string;
+  img: string;
 }
-const ImageContainer = ({titlespan,title,img}:Props) => {
+const ImageContainer = ({ titlespan, title, img }: Props) => {
   return (
     <Container>
       <Title>
         <StyledSpan>{titlespan}</StyledSpan> {title}
       </Title>
       <ImageWrapper>
-        <Image src={img}/>
+        <Image src={img} />
         <ButtonWrapper>
           <Button>
-            <HiOutlinePresentationChartLine className='mx-3'  style={{marginBottom:4}}/>
+            <HiOutlinePresentationChartLine
+              className="mx-3"
+              style={{ marginBottom: 4 }}
+            />
             Presentación
           </Button>
-          <Button>
-            <BsWhatsapp  className='mx-3 ' style={{marginBottom:4.5}}/>
-            Cotiza
-          </Button>
+          <a href="https://api.whatsapp.com/send?phone=1234567890">
+            <Button1>
+              <BsWhatsapp className="mx-3 " style={{ marginBottom: 4.5 }} />
+              Cotiza
+            </Button1>
+          </a>
         </ButtonWrapper>
       </ImageWrapper>
     </Container>
