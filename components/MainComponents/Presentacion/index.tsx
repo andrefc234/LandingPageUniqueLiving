@@ -93,7 +93,7 @@ const ImageContainer = ({ titlespan, title, img }: Props) => {
             />
             Presentación
           </Button>
-          <a href="https://api.whatsapp.com/send?phone=1234567890">
+          <a href="https://api.whatsapp.com/send?phone=4427492083">
             <Button1>
               <BsWhatsapp className="mx-3 " style={{ marginBottom: 4.5 }} />
               Cotiza
