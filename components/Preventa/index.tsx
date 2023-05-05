@@ -10,45 +10,45 @@ import Info from '../MainComponents/Info';
 import Gallery from '../MainComponents/Gallery';
 import Mosaico from '../MainComponents/Mosaico';
 export default function index(): JSX.Element {
-  const images = ["./assets/fachada.jpg" , './assets/_28012018_DSC036112.jpg','./assets/iMG_20171108_09494912.jpg'];
+  const images = [
+    './assets/fachada.jpg',
+    './assets/_28012018_DSC036112.jpg',
+    './assets/iMG_20171108_09494912.jpg',
+  ];
   return (
     <div>
       <Navb />
-      <ImageTitle
- img={"./assets/rg.jpg"}
- title={<>
-  Loft
- </>}
- />
+      <ImageTitle img={'./assets/rg.jpg'} title={<>Loft</>} />
       <div>
         <Preventa2 />
       </div>
       <div>
-        <Gallery  images={images} height='100%' marginB='0%' />
+        <Gallery images={images} height="100%" marginB="0%" />
       </div>
       <div>
-        <Mosaico paragraph={
-       "Para una "
-      }
-      
-      paragraph2="diseñamos tus espacios "
-      styledspan1="experencia unica"
-      styledspan2="optimizando recursos"/>
+        <Mosaico
+          paragraph={'Para una '}
+          paragraph2="diseñamos tus espacios "
+          styledspan1="experencia unica"
+          styledspan2="optimizando recursos"
+        />
       </div>
       <div>
-        <Preventa4/>
+        <Preventa4 />
       </div>
       <div>
-        <Preventa5/>
+        <Preventa5 />
       </div>
       <div>
-      <Presentacion
-    img={"./assets/casacortada.png"}
-    titlespan={"¡Ahorra y construye"}
-    title={"con nosotros!"}
-    />
+        <Presentacion
+          img={'./assets/casacortada.png'}
+          titlespan={'¡Ahorra y construye'}
+          title={'con nosotros!'}
+        />
       </div>
-      <div><Info/></div>
+      <div>
+        <Info />
+      </div>
     </div>
   );
 }

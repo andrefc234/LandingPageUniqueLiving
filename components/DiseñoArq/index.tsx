@@ -1,9 +1,9 @@
 import Navb from '../MainComponents/NavB';
-import ImageTitle from '../MainComponents/ImageTitle'
+import ImageTitle from '../MainComponents/ImageTitle';
 import Parte2 from '../DiseñoArq/Parte2';
-import Gallery from '../MainComponents/Gallery'
-import MasInfo from '../MainComponents/MasInfo'
-import Presentacion from '../MainComponents/Presentacion'
+import Gallery from '../MainComponents/Gallery';
+import MasInfo from '../MainComponents/MasInfo';
+import Presentacion from '../MainComponents/Presentacion';
 import Info from '../MainComponents/Info';
 import Mosaico from '../MainComponents/Mosaico';
 export default function index(): JSX.Element {
@@ -12,61 +12,67 @@ export default function index(): JSX.Element {
     <div>
       <Navb />
       <div>
-      <ImageTitle
- img={"./assets/inicio.png"}
- title={<>
-  Diseño <br />
-        Arquitectonico
- </>}
- />
+        <ImageTitle
+          img={'./assets/inicio.png'}
+          title={
+            <>
+              Diseño <br />
+              Arquitectonico
+            </>
+          }
+        />
       </div>
       <div>
         <Parte2 />
       </div>
       <div>
-      <Gallery images={images}
-      height='100%'
-      marginB='0%'
-      />
+        <Gallery images={images} height="100%" marginB="0%" />
       </div>
       <div>
         <Mosaico
-         paragraph={
-          " ¡Construyendo con estructura metálica te aseguramos mayor"
-         }
-         
-         paragraph2="y "
-         styledspan1="seguridad estructural"
-         styledspan2="reducción de costos!"/>
+          paragraph={
+            ' ¡Construyendo con estructura metálica te aseguramos mayor'
+          }
+          paragraph2="y "
+          styledspan1="seguridad estructural"
+          styledspan2="reducción de costos!"
+        />
       </div>
       <div>
-      <MasInfo
-    img={"./assets/construccion1.png"}
-    subtitle1={'Nuestros'}
-    spansubtitle='servicios'
-    subtitle2='incluyen'
-    item1={<>
-     <b>Desarrollo</b> del concepto
-    </>}
-    item2={<>
-      <b>Gestión</b> del proyecto
-    </>}
-    item3={<>
-      <b>Construcción</b> de tu nueva casa
-    </>}
-     item4={<>
-       <b>Seguimiento</b> post-entrega
-    </>}
-    title='¡Te ayudamos a construir tu casa soñada!'
-    
-    />
+        <MasInfo
+          img={'./assets/construccion1.png'}
+          subtitle1={'Nuestros'}
+          spansubtitle="servicios"
+          subtitle2="incluyen"
+          item1={
+            <>
+              <b>Desarrollo</b> del concepto
+            </>
+          }
+          item2={
+            <>
+              <b>Gestión</b> del proyecto
+            </>
+          }
+          item3={
+            <>
+              <b>Construcción</b> de tu nueva casa
+            </>
+          }
+          item4={
+            <>
+              <b>Seguimiento</b> post-entrega
+            </>
+          }
+          title="¡Te ayudamos a construir tu casa soñada!"
+        />
       </div>
       <div>
-      <Presentacion
-    img={"./assets/casacortada.png"}
-    titlespan={"¡Ahorra y construye"}
-    title={"con nosotros!"}
-    />
+        <Presentacion
+          img={'./assets/casacortada.png'}
+          titlespan={'¡Ahorra y construye'}
+          title={'con nosotros!'}
+        />
       </div>
       <div>
         <Info />
