@@ -5,11 +5,15 @@ import styles from '@/styles/Home.module.css'
 import Layout from '../components/Layout'
 import Terceraparte from '../components/Index/TerceraParte'
 import CuartaParte from '../components/Index/CuartaParte'
+import Hero from '../components/Index/Hero'
 import QuintaParte from '../components/Index/QuintaParte/index'
 import SextaParte from '../components/Index/SextaParte'
 import PrimeraParte from '../components/Index/Primeraparte'
 import SegundaParte from '../components/Index/Segundaparte'
-
+import Info from '../components/MainComponents/Info'
+import Mosaico from '../components/MainComponents/Mosaico'
+import Presentacion from '../components/MainComponents/Presentacion'
+import MosaicoTitle from '../components/MainComponents/MosaicoTitle'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -22,32 +26,31 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
      <Layout>
+
      <PrimeraParte/>
-    <SegundaParte
-          title="Conócenos"
-          description={{
-            paragraph1:
-              'En Unique Living somos un grupo joven de creativos que nos gusta disfrutar de lo que hacemos. Creemos que laarquitectura no tiene por qué ser seria y aburrida. Siempre hemos pensado que un buen diseño arquitectónicopuede hacernos reír, soñar e incluso bailar.',
-            paragraph2:
-              ' Por supuesto, eso no significa que no tomemos la arquitectura en serio. Buscamos ofrecer espacios donde lacreatividad se mezcle con la funcionalidad y la estética, y satisfacer las necesidades de nuestros clientesdivirtiéndonos un poco en el proceso.',
-            paragraph3:
-              'Te aseguramos que mientras diseñamos y construimos tu casa de ensueño, disfrutaremos junto a ti cada paso dado en el desarrollo de tu nuevo espacio favorito.',
-          }}
-          imageSrc="/assets/jARDIN1.jpg"
-        /> 
-        <Terceraparte/>
+     <Mosaico
+         paragraph={
+        <>
+        Transformamos tus Sueños en Hogares <br/>
+        </>
+         }
+         
+         paragraph2="y "
+         styledspan1="Únicos, Creativos"
+         styledspan2="Funcionales"/>
+     <Hero/>
+     <MosaicoTitle title='Nuestros Procesos'/>
+    <SegundaParte/> 
+
+    <Terceraparte/>
+    <MosaicoTitle title='Proyectos'/>
         <CuartaParte/>
-        <QuintaParte/>
-        <SextaParte
-        title="Misión"
-        descriptionn={{
-          paragraph4:
-            ' Unique Living busca que cada proyecto sea tan único como tu. Aseguramos empatizar contigo, entender tus necesidades y seguir tu estilo.',
-          paragraph5:
-            ' Ningún proyecto se parece a los demás pues buscamos que la esencia de cada cliente quede perfectamente reflejada en el diseño de cada concepto.',
-        }}
-        imageSrc="./assets/sALA1.jpg"
-      />
+        <Presentacion
+    img={"./assets/casacortada.png"}
+    titlespan={" "}
+    title={" "}
+    />
+      <Info/>
      </Layout>
     </>
   )
