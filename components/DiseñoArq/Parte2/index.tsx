@@ -6,6 +6,7 @@ const Container = styled.div`
   place-items: center;
   height: 100vh;
   background-color: white;
+  margin-bottom:10%;
 `;
 
 const IconSection = styled.div`
@@ -13,6 +14,13 @@ const IconSection = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top:10%;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const IconWrapper = styled.div`
@@ -26,11 +34,10 @@ const Icon = styled.img`
 `;
 
 const Title = styled.h2`
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Montserrat';
-  margin-top: 20px;
-  text-align: center;
+text-align: center;
+margin-top: 10%;
+font-family: 'Montserrat';
+font-size: 30px;
 `;
 
 const Paragraph = styled.p`
@@ -51,17 +58,17 @@ const MyComponent = () => {
     <Container>
       <IconSection >
         <IconWrapper >
-          <Icon2 src="./assets/instagram.jpg" alt="icon1" />
+          <Icon2 src="./assets/arq.png" alt="icon1" />
           <Title>
             Diseño Arquitectonico
           </Title>
         </IconWrapper>
         <IconWrapper>
-          <Icon src="./assets/instagram.jpg" alt="icon2" />
+          <Icon src="./assets/rem.png" alt="icon2" />
           <Title>Remodelación</Title>
         </IconWrapper>
         <IconWrapper>
-          <Icon src="./assets/instagram.jpg" alt="icon3" />
+          <Icon src="./assets/amp.png" alt="icon3" />
           <Title>Ampliación</Title>
         </IconWrapper>
       </IconSection>

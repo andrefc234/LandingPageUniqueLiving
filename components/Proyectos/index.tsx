@@ -3,14 +3,14 @@ import Proyecto1 from '../Proyectos/Proyecto1';
 import ImageTitle from '../MainComponents/ImageTitle';
 import Presentacion from '../MainComponents/Presentacion';
 import Info from '../MainComponents/Info';
-
+import img from '../../public/assets/Proyectosportada.jpg'
 export default function index(): JSX.Element {
   return (
     <div>
       <Navb />
       <div>
         <ImageTitle
-          img={'./assets/Proyectosportada.jpg'}
+          backgroundUrl={img}
           title={<>Proyectos</>}
         />
       </div>

@@ -125,7 +125,7 @@ const Image13 = styled.img`
   object-fit: cover;
   margin-bottom: 15px;
 `;
-const ExampleComponent = () => {
+const index = () => {
   return (
     <div>
       <Container>
@@ -175,4 +175,4 @@ const ExampleComponent = () => {
   );
 };
 
-export default ExampleComponent;
+export default index;
