@@ -79,7 +79,6 @@ const Image6 = styled.img`
 `;
 const Image7 = styled.img`
   margin-left: 60px;
-
   margin-right: 60px;
   margin-top: 30px;
   width: 17.5%;
@@ -96,11 +95,38 @@ const Image8 = styled.img`
 const Image9 = styled.img`
   margin-right: 60px;
   margin-top: 30px;
-  width: 55%;
+  width: 45%;
   height: auto;
   object-fit: cover;
 `;
-
+const Image10 = styled.img`
+  margin-right: 60px;
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+`;
+const Image11 = styled.img`
+  margin-left: 60px;
+  width: 38%;
+  height: auto;
+  object-fit: cover;
+`;
+const Image12 = styled.img`
+  margin-left: 60px;
+  margin-top: 30px;
+  width: 55%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+`;
+const Image13 = styled.img`
+  margin-right: 60px;
+  margin-top: 30px;
+  width: 35%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+`;
 const ExampleComponent = () => {
   return (
     <div>
@@ -131,6 +157,20 @@ const ExampleComponent = () => {
           <Image7 src="./assets/jur3.jpg" alt="Imagen 3" />
           <Image8 src="./assets/jur4.jpg" alt="Imagen 4" />
           <Image9 src="./assets/jur5.jpg" alt="Imagen 4" />
+        </ImageGroup>
+      </ImageContainer>
+      <Container>
+        <Title>Querétaro, Qro.</Title>
+        <Subtitle>Diseño Arquitectónico e Interiorismo</Subtitle>
+      </Container>
+      <ImageContainer>
+        <ImageGroup>
+          <Image11 src="./assets/ro1.jpg" alt="Imagen 2" />
+          <Image10 src="./assets/ro2.jpg" alt="Imagen 1" />
+        </ImageGroup>
+        <ImageGroup>
+          <Image12 src="./assets/ro3.jpg" alt="Imagen 4" />
+          <Image13 src="./assets/ro4.jpg" alt="Imagen 3" />
         </ImageGroup>
       </ImageContainer>
     </div>
