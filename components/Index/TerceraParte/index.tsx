@@ -7,8 +7,8 @@ import { useInView } from 'react-intersection-observer';
 const ImageContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 100vh;
+ 
+  height: 110vh;
 
   @media (max-width: 640px) {
     height: auto;
@@ -16,11 +16,10 @@ const ImageContainer = styled.div`
     padding-bottom: 50px;
   }
 `;
-
 const Service = styled.div`
   position: relative;
   width: 100%;
-  height: 33.33%;
+  height: 150%;
   overflow: hidden;
 
   @media (max-width: 640px) {
@@ -30,51 +29,49 @@ const Service = styled.div`
 
 const ServiceImage = styled(Image)`
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
- 
-  transition: opacity 0.3s ease;
-
-  &:hover {
-    opacity: 0.5;
-  }
-
+  top:20%;
+  left: 15%;
+  width:80%;
+  margin-left:10%;
+  object-fit: cover;
+  height: 150%;
+  
   @media (max-width: 640px) {
     width: 100%;
     height: 100%;
   }
 `;
 
+
 const ServiceTitle = styled.h3`
   position: absolute;
-  bottom: 100;
-  left: 0;
-  padding: 0;
-  
-  background-color: rgba(0, 0, 0, 0.8);
-  margin-bottom: -.05rem;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: left;
-  color: white;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-  transition: opacity 0.3s ease;
 
-  &:hover {
-    opacity: 0;
-  }
+  top:50%;
+  left: 10%;
+  padding-top: 2%;
+
+  background-color:white;
+  font-family: 'Montserrat';
+  font-size: 2rem;
+  
+  text-align: center;
+  color: black;
+  width: 30%;
+  height: 100%;
+
+  box-shadow: 5px 5px 10px  black;
+  
+
+
 
   @media (max-width: 640px) {
     font-size: 1.5rem;
   }
 `;
+const Frame = styled.div`
+background-color:white;
 
+`
 function Terceraparte() {
   const [ref, inView] = useInView({
     threshold: 0.2, // Trigger when 50% of the component is visible
@@ -88,25 +85,28 @@ function Terceraparte() {
   });
 
   return (
-    <Container fluid className="bg-white">
+    <Container fluid className="bg-white my-5">
       <animated.div ref={ref} style={props}>
     <div>
       <div style={{backgroundImage:'url("/assets/mosaico1.jpg")'}} className='text-center p-5'>
-        <h1 className="text-3xl font-bold mb-0">Nuestros Servicios</h1>
+        <h1 className="text-3xl font-bold mb-0" style={{fontFamily:'Montserrat'}}>Nuestros Servicios</h1>
       </div>
       <ImageContainer>
       
         <Service>
-          <ServiceImage src="/assets/sala.jpg" alt="Servicio 1" width={1444} height={800}/>
+          <ServiceImage src="/assets/sala.jpg" alt="Servicio 1" width={1444} height={900}/>
+          
           <ServiceTitle>Diseño de interiores</ServiceTitle>
+          
+         
         </Service>
         
         <Service>
-          <ServiceImage src="/assets/fA_Photo41.jpg" alt="Servicio 2" width={1444} height={800} />
+          <ServiceImage src="/assets/fA_Photo41.jpg" alt="Servicio 2" width={1444} height={1000} />
           <ServiceTitle>Arquitectura</ServiceTitle>
         </Service>
         <Service>
-          <ServiceImage src="/assets/pJ_Photo21.jpg" alt="Servicio 3" width={1444} height={800} />
+          <ServiceImage src="/assets/pJ_Photo21.jpg" alt="Servicio 3" width={1444} height={1000} />
           <ServiceTitle>Remodelación y Ampliación</ServiceTitle>
         </Service>
       </ImageContainer>

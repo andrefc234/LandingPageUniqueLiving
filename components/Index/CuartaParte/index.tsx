@@ -1,21 +1,7 @@
 import styled from 'styled-components';
 
 
-const Container = styled.div`
-  background-image: url('/assets/mosaico1.jpg');
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 5rem 0;
 
-  @media (max-width: 960px) {
-    padding: 2rem 0;
-  }
-
-  @media (max-width: 640px) {
-    padding: 1rem 0;
-  }
-`;
 
 const Col = styled.div`
   flex: 1;
@@ -122,9 +108,7 @@ const ServiceTitle = styled.div`
 function index() {
   return (
     <>
-      <Container className="bg-white">
-        <Title>Proyectos</Title>
-      </Container>
+     
       <Row>
         <Col>
           <Service>
