@@ -13,7 +13,7 @@ export default function index(): JSX.Element {
       <Navb />
       <div>
         <ImageTitle
-          img={'./assets/inicio.png'}
+          img={'./assets/dise.jpg'}
           title={
             <>
               Diseño <br />

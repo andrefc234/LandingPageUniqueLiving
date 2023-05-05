@@ -18,7 +18,7 @@ export default function index(): JSX.Element {
   return (
     <div>
       <Navb />
-      <ImageTitle img={'./assets/rg.jpg'} title={<>Loft</>} />
+      <ImageTitle img={'./assets/loft.jpg'} title={<>Loft</>} />
       <div>
         <Preventa2 />
       </div>
