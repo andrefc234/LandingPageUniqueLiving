@@ -73,7 +73,7 @@ export default function index() {
               Arquitectura
             </Nav.Link>
             <Nav.Link
-              href="/disenio"
+              href="/proyectos"
               className="text-white "
               style={{ fontFamily: 'Montserrat', fontWeight: 1000 }}
             >
