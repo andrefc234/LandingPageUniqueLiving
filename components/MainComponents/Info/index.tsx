@@ -6,6 +6,12 @@ import { FaWhatsapp, FaFacebook, FaInstagram, FaEnvelope } from 'react-icons/fa'
 const ContactListWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+   
+   
+   
+   
+  }
 `;
 
 const ContactItemWrapper = styled.div`
@@ -18,7 +24,6 @@ const ContactIcon = styled.div`
   margin-right: 8px;
   font-size: 24px;
   color: #333;
- 
 `;
 
 const ContactTitle = styled.div`
@@ -36,9 +41,11 @@ const ContactLink = styled.a`
     color: #00bcd4;
   }
 `;
-interface ContactProp{
-  instagram:string;
+
+interface ContactProp {
+  instagram: string;
 }
+
 const HorarioWrapper = styled.div`
   font-size: 16px;
   font-weight: bold;
@@ -49,6 +56,7 @@ const HorarioText = styled.span`
   font-weight: normal;
   font-family: 'Raleway';
 `;
+
 const AddressWrapper = styled.div`
   font-size: 16px;
   margin-bottom: 8px;
@@ -115,7 +123,7 @@ const ContactList = ({instagram}:ContactProp) => {
 export default function index() {
   return (
     <>
-    <Container style={{marginLeft:'15%', padding:'2%'}} fluid>
+    <Container style={{marginLeft:'', padding:'5%'}} fluid>
       <Row>
         <Col>
         <ContactList instagram={'test'}/>

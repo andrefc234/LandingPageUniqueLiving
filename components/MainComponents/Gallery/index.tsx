@@ -7,13 +7,22 @@ const ImagesSection = styled.section`
   display: flex;
   flex-direction: row;
   margin: 0 -10px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    
+  }
 `;
 
 const ImageContainer = styled.div<DivC>`
-  width: 50%;
+  width: 100%;
   padding: 0;
   display: flex;
   margin-bottom:${props => (props.marginB)};
+  @media (max-width: 768px) {
+    width: auto;
+    
+  }
+
 `;
 
 const Image = styled.img`
@@ -21,11 +30,13 @@ const Image = styled.img`
   padding: 0;
   max-width: 100%;
   height: ${props => (props.height)};
+ 
 `;
 
 
 const Container = styled.div`
   background-color: white;
+
 `;
 
 const StyledImg = styled.img`

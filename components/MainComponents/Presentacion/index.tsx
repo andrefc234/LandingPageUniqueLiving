@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Col, Row } from 'react-bootstrap';
+
 const Title = styled.h1`
   font-size: 32px;
   font-weight: bold;
@@ -9,6 +10,7 @@ const Title = styled.h1`
   align-self: flex-start;
   padding-left: 50px;
 `;
+
 const Container = styled.div`
   background-color: white;
   display: flex;
@@ -18,12 +20,21 @@ const Container = styled.div`
 
 const ImageWrapper = styled.div`
   position: relative;
+  max-width: 100%;
+  height: auto;
+  @media (max-width: 768px) {
+    height: auto;
+  }
 `;
 
 const Image = styled.img`
   width: 100%;
   height: auto;
   display: block;
+  @media (max-width: 768px) {
+    height: 15vh;
+    width: 100%;
+  }
 `;
 
 const ButtonWrapper = styled.div`
@@ -34,73 +45,88 @@ const ButtonWrapper = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (max-width: 768px) {
+    margin-top:1rem;
+    margin-left:-1.3rem;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+   
+  }
 `;
 
 const Button = styled.button`
-  background-color: #bf806b;
-  color: white;
-  font-size: 24px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  margin: 245px;
-  width: 15rem;
-  cursor: pointer;
-  margin-top: 14%;
-  box-shadow: 7px 7px 10px black;
-  white-space: nowrap;
+background-color: #bf806b;
+color: white;
+font-size: 24px;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+margin: 245px;
+width:15rem;
+cursor: pointer;
+margin-top:14%;
+box-shadow: 7px 7px 10px black;
+white-space: nowrap;
+
+  @media (max-width: 768px) {
+    margin: 0.5rem;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    margin-top:0%;
+    margin-bottom:15%;
+    margin-left:15%;
+  }
 `;
-const Button1 = styled.button`
-  background-color: #bf806b;
-  color: white;
-  font-size: 24px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  margin: 245px;
-  width: 15rem;
-  cursor: pointer;
-  margin-top: 29%;
-  box-shadow: 7px 7px 10px black;
-  white-space: nowrap;
-`;
+
 import { HiOutlinePresentationChartLine } from 'react-icons/hi';
 import { BsWhatsapp } from 'react-icons/bs';
+
 const Icon = styled.i`
   margin-right: 10px;
 `;
+
 const StyledSpan = styled.span`
   color: #bf806b;
 `;
+
 interface Props {
   titlespan: string;
   title: string;
   img: string;
 }
+
 const ImageContainer = ({ titlespan, title, img }: Props) => {
   return (
-    <Container>
+    <Container className='my-4'>
       <Title>
         <StyledSpan>{titlespan}</StyledSpan> {title}
       </Title>
-      <ImageWrapper>
-        <Image src={img} />
-        <ButtonWrapper>
-          <Button>
-            <HiOutlinePresentationChartLine
-              className="mx-3"
-              style={{ marginBottom: 4 }}
-            />
-            Presentación
-          </Button>
-          <a href="https://api.whatsapp.com/send?phone=4427492083">
-            <Button1>
-              <BsWhatsapp className="mx-3 " style={{ marginBottom: 4.5 }} />
-              Cotiza
-            </Button1>
-          </a>
-        </ButtonWrapper>
-      </ImageWrapper>
+      <Row>
+        <Col>
+          <ImageWrapper>
+            <Image src={img} />
+            <ButtonWrapper>
+              <Button>
+                <HiOutlinePresentationChartLine
+                  className='mx-1'
+                  style={{ marginBottom: 4 }}
+                />
+                Presentación
+              </Button>
+              <Button>
+                <BsWhatsapp
+                  className='mx-2'
+                  style={{ marginBottom: 4.5 }}
+                />
+                Cotiza
+              </Button>
+            </ButtonWrapper>
+          </ImageWrapper>
+        </Col>
+      </Row>
     </Container>
   );
 };

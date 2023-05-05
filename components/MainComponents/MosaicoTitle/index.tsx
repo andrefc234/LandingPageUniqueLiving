@@ -5,10 +5,7 @@ import styled from 'styled-components';
 
 interface Props{
 
-paragraph:any;
-styledspan1:string;
-paragraph2:any;
-styledspan2:string;
+title:string;
 }
 
 const Paragraph = styled.p`
@@ -22,16 +19,12 @@ const Paragraph = styled.p`
 const StyledSpan = styled.span`
   color: #bf806b;
 `;
-export default function index({paragraph,paragraph2,styledspan1,styledspan2}:Props):JSX.Element {
+export default function index({title}:Props):JSX.Element {
   return (
         <div>
     <div style={{backgroundImage:'url("/assets/mosaico1.jpg")'}} className='text-center p-5'>
  
-      <Paragraph>
-            {paragraph}
-
-            <StyledSpan>{styledspan1}</StyledSpan>   {paragraph2} <StyledSpan>{styledspan2}</StyledSpan>
-</Paragraph>
+      <h2 className='text-center' style={{fontFamily:'Montserrat'}}>{title}</h2>
     </div>
     </div>
   )
