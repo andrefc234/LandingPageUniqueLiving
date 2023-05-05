@@ -79,14 +79,12 @@ const Image6 = styled.img`
 `;
 const Image7 = styled.img`
   margin-left: 60px;
-  margin-right: 60px;
   margin-top: 30px;
   width: 17.5%;
   height: auto;
   object-fit: cover;
 `;
 const Image8 = styled.img`
-  margin-right: 60px;
   margin-top: 30px;
   width: 17.5%;
   height: auto;
@@ -95,7 +93,7 @@ const Image8 = styled.img`
 const Image9 = styled.img`
   margin-right: 60px;
   margin-top: 30px;
-  width: 45%;
+  width: 50%;
   height: auto;
   object-fit: cover;
 `;
