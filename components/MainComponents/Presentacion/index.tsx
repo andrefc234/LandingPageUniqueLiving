@@ -47,13 +47,17 @@ const ButtonWrapper = styled.div`
   transform: translate(-50%, -50%);
 
   @media (max-width: 768px) {
-    margin-top: 1rem;
-    margin-left: -1.3rem;
+    margin-top:1rem;
+    margin-left:-1.3rem;
     width: 100%;
     height: auto;
     font-size: 1rem;
+   
   }
 `;
+
+
+
 
 const Button = styled.button`
   background-color: #bf806b;
@@ -79,7 +83,6 @@ const Button = styled.button`
     margin-left: 15%;
   }
 `;
-
 const Button2 = styled.button`
   background-color: #bf806b;
   color: #fff;
@@ -104,7 +107,6 @@ const Button2 = styled.button`
     margin-left: 15%;
   }
 `;
-
 import { HiOutlinePresentationChartLine } from 'react-icons/hi';
 import { BsWhatsapp } from 'react-icons/bs';
 
@@ -124,23 +126,21 @@ interface Props {
 
 const ImageContainer = ({ titlespan, title, img }: Props) => {
   return (
-    <Container className="my-4">
-      <Title>
+    <Container className='my-4'>
+      <Title className='mb-5'>
         <StyledSpan>{titlespan}</StyledSpan> {title}
       </Title>
       <Row>
-        <Col>
+      <Col>
           <ImageWrapper>
             <Image src={img} />
             <ButtonWrapper>
               <Button2>
-                <a href="/mi_archivo.pdf" download="mi_archivo.pdf">
-                  <HiOutlinePresentationChartLine
-                    className="mx-1"
-                    style={{ marginBottom: 4 }}
-                  />
-                  Presentación
-                </a>
+              <a href="/mi_archivo.pdf" download="mi_archivo.pdf" style={{ textDecoration: 'none', color: 'inherit' }}>
+  <HiOutlinePresentationChartLine className="mx-1" style={{ marginBottom: 4 }} />
+  Presentación
+</a>
+
               </Button2>
               <a
                 href="https://api.whatsapp.com/send?phone=4427492083"
