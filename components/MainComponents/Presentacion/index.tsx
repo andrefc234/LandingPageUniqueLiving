@@ -47,37 +47,61 @@ const ButtonWrapper = styled.div`
   transform: translate(-50%, -50%);
 
   @media (max-width: 768px) {
-    margin-top:1rem;
-    margin-left:-1.3rem;
+    margin-top: 1rem;
+    margin-left: -1.3rem;
     width: 100%;
     height: auto;
     font-size: 1rem;
-   
   }
 `;
 
 const Button = styled.button`
-background-color: #bf806b;
-color: white;
-font-size: 24px;
-padding: 10px 20px;
-border: none;
-border-radius: 5px;
-margin: 245px;
-width:15rem;
-cursor: pointer;
-margin-top:14%;
-box-shadow: 7px 7px 10px black;
-white-space: nowrap;
+  background-color: #bf806b;
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 245px;
+  width: 15rem;
+  cursor: pointer;
+  margin-top: 28%;
+  box-shadow: 7px 7px 10px black;
+  white-space: nowrap;
 
   @media (max-width: 768px) {
     margin: 0.5rem;
     width: 100%;
     height: auto;
     font-size: 1rem;
-    margin-top:0%;
-    margin-bottom:15%;
-    margin-left:15%;
+    margin-top: 0%;
+    margin-bottom: 15%;
+    margin-left: 15%;
+  }
+`;
+
+const Button2 = styled.button`
+  background-color: #bf806b;
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 245px;
+  width: 15rem;
+  cursor: pointer;
+  margin-top: 14%;
+  box-shadow: 7px 7px 10px black;
+  white-space: nowrap;
+
+  @media (max-width: 768px) {
+    margin: 0.5rem;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    margin-top: 0%;
+    margin-bottom: 15%;
+    margin-left: 15%;
   }
 `;
 
@@ -100,7 +124,7 @@ interface Props {
 
 const ImageContainer = ({ titlespan, title, img }: Props) => {
   return (
-    <Container className='my-4'>
+    <Container className="my-4">
       <Title>
         <StyledSpan>{titlespan}</StyledSpan> {title}
       </Title>
@@ -109,20 +133,23 @@ const ImageContainer = ({ titlespan, title, img }: Props) => {
           <ImageWrapper>
             <Image src={img} />
             <ButtonWrapper>
-              <Button>
+              <Button2>
                 <HiOutlinePresentationChartLine
-                  className='mx-1'
+                  className="mx-1"
                   style={{ marginBottom: 4 }}
                 />
                 Presentación
-              </Button>
-              <Button>
-                <BsWhatsapp
-                  className='mx-2'
-                  style={{ marginBottom: 4.5 }}
-                />
-                Cotiza
-              </Button>
+              </Button2>
+              <a
+                href="https://api.whatsapp.com/send?phone=4427492083"
+                target="_blank"
+              >
+                {' '}
+                <Button>
+                  <BsWhatsapp className="mx-2" style={{ marginBottom: 4.5 }} />
+                  Cotiza
+                </Button>
+              </a>
             </ButtonWrapper>
           </ImageWrapper>
         </Col>

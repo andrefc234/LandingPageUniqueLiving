@@ -1,16 +1,17 @@
-import React from 'react'
-import {Container,Row,Col} from 'react-bootstrap'
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
-import { FaWhatsapp, FaFacebook, FaInstagram, FaEnvelope } from 'react-icons/fa';
+import {
+  FaWhatsapp,
+  FaFacebook,
+  FaInstagram,
+  FaEnvelope,
+} from 'react-icons/fa';
 
 const ContactListWrapper = styled.div`
   display: flex;
   flex-direction: column;
   @media (max-width: 768px) {
-   
-   
-   
-   
   }
 `;
 
@@ -73,7 +74,7 @@ const Address: React.FC = () => {
     <AddressWrapper>
       Dirección:
       <br />
-    <AddressText>Blvd. Bernardo Quintana 9691,Local 9 y 10</AddressText>
+      <AddressText>Blvd. Bernardo Quintana 9691,Local 9 y 10</AddressText>
       <br />
       <AddressText>Centro Sur</AddressText>
       <br />
@@ -82,7 +83,7 @@ const Address: React.FC = () => {
       <AddressText>Santiago de Querétaro, Qro, México</AddressText>
     </AddressWrapper>
   );
-}
+};
 const Horario: React.FC = () => {
   return (
     <HorarioWrapper>
@@ -93,29 +94,58 @@ const Horario: React.FC = () => {
       <HorarioText>Sabado: 10:00hrs-14:00hrs</HorarioText>
     </HorarioWrapper>
   );
-}
-const ContactList = ({instagram}:ContactProp) => {
+};
+const ContactList = ({ instagram }: ContactProp) => {
   return (
     <ContactListWrapper>
       <ContactItemWrapper>
-        <ContactIcon><FaWhatsapp color='#BF806B' /></ContactIcon>
-        
-        <ContactLink href="https://www.whatsapp.com/"> +1-555-123-4567</ContactLink>
+        <ContactIcon>
+          <FaWhatsapp color="#BF806B" />
+        </ContactIcon>
+
+        <ContactLink
+          href="https://api.whatsapp.com/send?phone=4427492083"
+          target="_blank"
+        >
+          {' '}
+          442 749 2083
+        </ContactLink>
       </ContactItemWrapper>
       <ContactItemWrapper>
-        <ContactIcon><FaFacebook color='#BF806B'/></ContactIcon>
-     
-        <ContactLink href="https://www.facebook.com/"> Unique Living</ContactLink>
+        <ContactIcon>
+          <FaFacebook color="#BF806B" />
+        </ContactIcon>
+
+        <ContactLink
+          href="https://www.facebook.com/uniquelivingqro"
+          target="_blank"
+        >
+          {' '}
+          Unique Living
+        </ContactLink>
       </ContactItemWrapper>
       <ContactItemWrapper>
-        <ContactIcon><FaInstagram color='#BF806B'/></ContactIcon>
-       
-        <ContactLink href="https://www.instagram.com/"> {instagram}</ContactLink>
+        <ContactIcon>
+          <FaInstagram color="#BF806B" />
+        </ContactIcon>
+
+        <ContactLink
+          href="https://www.instagram.com/uniqueliving_qro/"
+          target="_blank"
+        >
+          {' '}
+          uniqueliving_qro
+        </ContactLink>
       </ContactItemWrapper>
       <ContactItemWrapper>
-        <ContactIcon><FaEnvelope color='#BF806B'/></ContactIcon>
-     
-        <ContactLink href="mailto:example@mail.com"> example@mail.com</ContactLink>
+        <ContactIcon>
+          <FaEnvelope color="#BF806B" />
+        </ContactIcon>
+
+        <ContactLink href="mailto:example@mail.com" target="_blank">
+          {' '}
+          fabiolainv2020@gmail.com
+        </ContactLink>
       </ContactItemWrapper>
     </ContactListWrapper>
   );
@@ -123,23 +153,21 @@ const ContactList = ({instagram}:ContactProp) => {
 export default function index() {
   return (
     <>
-    <Container style={{marginLeft:'', padding:'5%'}} fluid>
-      <Row>
-        <Col>
-        <ContactList instagram={'test'}/>
-        </Col>
-        <Col>
-        <Row style={{marginTop:'-1%'}}>
-        <Horario/>
+      <Container style={{ marginLeft: '', padding: '5%' }} fluid>
+        <Row>
+          <Col>
+            <ContactList instagram={'test'} />
+          </Col>
+          <Col>
+            <Row style={{ marginTop: '-1%' }}>
+              <Horario />
+            </Row>
+            <Row className="my-3">
+              <Address />
+            </Row>
+          </Col>
         </Row>
-        <Row className='my-3'>
-    <Address/>
-        </Row>
-        </Col>
-      </Row>
-      
-    </Container>
-    
+      </Container>
     </>
-  )
+  );
 }
