@@ -8,7 +8,6 @@ const Container = styled.div`
   justify-content: center;
   background-color: #ffffff;
   padding: 20px;
-  
 `;
 
 const Title = styled.h1`

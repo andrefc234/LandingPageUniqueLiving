@@ -82,7 +82,7 @@ const Button = styled.button`
 
 const Button2 = styled.button`
   background-color: #bf806b;
-  color: white;
+  color: #fff;
   font-size: 24px;
   padding: 10px 20px;
   border: none;
@@ -134,11 +134,13 @@ const ImageContainer = ({ titlespan, title, img }: Props) => {
             <Image src={img} />
             <ButtonWrapper>
               <Button2>
-                <HiOutlinePresentationChartLine
-                  className="mx-1"
-                  style={{ marginBottom: 4 }}
-                />
-                Presentación
+                <a href="/mi_archivo.pdf" download="mi_archivo.pdf">
+                  <HiOutlinePresentationChartLine
+                    className="mx-1"
+                    style={{ marginBottom: 4 }}
+                  />
+                  Presentación
+                </a>
               </Button2>
               <a
                 href="https://api.whatsapp.com/send?phone=4427492083"
