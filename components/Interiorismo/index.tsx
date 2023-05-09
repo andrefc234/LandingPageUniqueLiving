@@ -7,7 +7,7 @@ import Presentacion from '../MainComponents/Presentacion'
 import Info from '../MainComponents/Info';
 import Mosaico from '../MainComponents/Mosaico';
 import Part2 from './Part2'
-import img from '../../public/assets/interiorismo.jpg'
+import img from '../../public/assets/HOME2.png'
 export default function index(): JSX.Element {
   const images = ['./assets/inter1.jpg', './assets/inter2.jpg','./assets/inter3.jpg'];
   return (

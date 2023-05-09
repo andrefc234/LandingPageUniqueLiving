@@ -3,7 +3,7 @@ import Proyecto1 from '../Proyectos/Proyecto1';
 import ImageTitle from '../MainComponents/ImageTitle';
 import Presentacion from '../MainComponents/Presentacion';
 import Info from '../MainComponents/Info';
-import img from '../../public/assets/Proyectosportada.jpg'
+import img from '../../public/assets/PROYECTOS.png'
 export default function index(): JSX.Element {
   return (
     <div>

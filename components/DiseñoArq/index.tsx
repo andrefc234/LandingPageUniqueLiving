@@ -6,7 +6,7 @@ import MasInfo from '../MainComponents/MasInfo'
 import Presentacion from '../MainComponents/Presentacion'
 import Info from '../MainComponents/Info';
 import Mosaico from '../MainComponents/Mosaico';
-import img from '../../public/assets/inicio.png'
+import img from '../../public/assets/DISEÑOARQUITECTONICO.png'
 export default function index(): JSX.Element {
   const images = ['./assets/dibujo.png', './assets/nodibujo.png'];
   return (
@@ -17,7 +17,7 @@ export default function index(): JSX.Element {
  backgroundUrl={img}
  title={<>
   Diseño <br />
-        Arquitectonico
+        Arquitectónico
  </>}
  />
       </div>

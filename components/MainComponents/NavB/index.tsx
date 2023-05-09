@@ -29,7 +29,7 @@ export default function index() {
             
             <Nav.Link href="/loft" className="text-white "style={{fontFamily:'Montserrat',fontWeight:1000}}>Loft</Nav.Link>
             <Nav.Link href="/interiorismo" className="text-white "style={{fontFamily:'Montserrat',fontWeight:1000}}>Interiorismo</Nav.Link>
-            <Nav.Link href="/disenio" className="text-white "style={{fontFamily:'Montserrat',fontWeight:1000}}>Arquitectura</Nav.Link>
+            <Nav.Link href="/arquitectura" className="text-white "style={{fontFamily:'Montserrat',fontWeight:1000}}>Arquitectura</Nav.Link>
             <Nav.Link href="/proyectos" className="text-white "style={{fontFamily:'Montserrat',fontWeight:1000}}>Proyectos</Nav.Link>
             
             <Button variant='secondary' className='px-5 mx-4 rounded-pill' style={{ backgroundColor: '#bf806b', fontWeight: 'bolder', outlineColor: 'white', fontFamily: 'Montserrat', color: 'black', borderRadius: '30px'}}>

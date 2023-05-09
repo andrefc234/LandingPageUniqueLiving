@@ -71,7 +71,7 @@ const MyCarousel = () => {
     <animated.div ref={ref} style={props}>
       <StyledCarousel activeIndex={index} onSelect={handleSelect} fade className="intro">
       <StyledCarouselItem>
-        <img src="/assets/fA_Photo11.jpg" alt="First slide" />
+        <img src="/assets/HOME.png" alt="First slide" />
         <Carousel.Caption className='text-left mb-5'>
           <p className="text-white ml-3 h1 sm:text-4xl md:text-5xl" style={{fontFamily:'Montserrat',textShadow:'40px 40px 80px black',fontWeight:'bold'}}>Arquitectura</p>
           <p className="text-white ml-3 font-weight-bold leading-tight h3 sm:text-6xl md:text-7xl" style={{fontFamily:'Raleway',textShadow:'40px 40px 80px black'}}>Casa Cantera</p>
