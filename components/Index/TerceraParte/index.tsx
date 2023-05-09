@@ -4,8 +4,9 @@ import Image from 'next/image';
 import { Container } from 'react-bootstrap';
 import { useSpring, animated } from '@react-spring/web';
 import { useInView } from 'react-intersection-observer';
-import Link from 'next/link';
+import Link from 'next/link'
 const ImageContainer = styled.div`
+
   display: flex;
   flex-direction: column;
  
@@ -93,27 +94,28 @@ function Terceraparte() {
         <h1 className="text-3xl font-bold mb-0" style={{fontFamily:'Montserrat'}}>Nuestros Servicios</h1>
       </div>
       <ImageContainer>
-       <Link href="/interiorismo">
+      
         <Service>
+        <Link href='/interiorismo'>
           <ServiceImage src="/assets/sala.jpg" alt="Servicio 1" width={1444} height={900}/>
-          
+         
           <ServiceTitle>Diseño de interiores</ServiceTitle>
           
-         
+          </Link>
         </Service>
-        </Link>
-        <Link href="/arquitectura">
+        
         <Service>
+          <Link href='/arquitectura'>
           <ServiceImage src="/assets/fA_Photo41.jpg" alt="Servicio 2" width={1444} height={1000} />
           <ServiceTitle>Arquitectura</ServiceTitle>
-        </Service>
           </Link>
-        <Link href="/loft">
+        </Service>
         <Service>
+          <Link href='/loft'>
           <ServiceImage src="/assets/pJ_Photo21.jpg" alt="Servicio 3" width={1444} height={1000} />
           <ServiceTitle>Loft</ServiceTitle>
-        </Service>
           </Link>
+        </Service>
       </ImageContainer>
     </div>
     </animated.div>
