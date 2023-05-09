@@ -14,7 +14,7 @@ styledspan2:string;
 const Paragraph = styled.p`
   text-align: center;
 
-  font-size: 30px;
+  font-size: 1.6rem;
   margin-bottom:5%;
   margin-top:5%;
   font-family: 'Montserrat';
