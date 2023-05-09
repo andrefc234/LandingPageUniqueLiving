@@ -162,15 +162,15 @@ export default function index() {
   backgroundColor: 'black',
   border: 'none'}}/>
         <div className='d-flex align-items-center justify-content-center my-5'><Image src='/assets/logo6.png' alt='' width={300} height={100}/></div>
-        <div className='d-flex align-items-center justify-content-center'>
+        <div className=' align-items-center justify-content-center'>
         <Row>
-          <Col>
+          <Col className=' align-items-center justify-content-center text-center' >
             <ContactList instagram={'test'} />
           </Col>
-          <Col className='mx-3'>
+          <Col >
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14942.508440802196!2d-100.356531!3d20.5624325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x72582271fbbad697!2sUnique%20Living%20-%20Arquitectura%20e%20Interiorismo!5e0!3m2!1ses!2smx!4v1672865353461!5m2!1ses!2smx"   loading="lazy"  width="500" height="300"></iframe>
             </Col>
-          <Col className='mx-3'>
+          <Col >
             <Row style={{ marginTop: '-1%' }}>
               <Horario />
             </Row>
