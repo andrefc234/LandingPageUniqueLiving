@@ -24,7 +24,7 @@ export default function index({title}:Props):JSX.Element {
         <div>
     <div style={{backgroundImage:'url("/assets/mosaico1.jpg")'}} className='text-center p-5'>
  
-      <h2 className='text-center' style={{fontFamily:'Montserrat'}}>{title}</h2>
+      <h1 className='text-center' style={{fontFamily:'Montserrat',fontWeight:'bold'}}>{title}</h1>
     </div>
     </div>
   )
