@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function index() {
   return (
@@ -32,7 +33,8 @@ export default function index() {
             <Nav.Link href="/arquitectura" className="text-white "style={{fontFamily:'Montserrat',fontWeight:1000}}>Arquitectura</Nav.Link>
             <Nav.Link href="/proyectos" className="text-white "style={{fontFamily:'Montserrat',fontWeight:1000}}>Proyectos</Nav.Link>
             
-            <Button variant='secondary' className='px-5 mx-4 rounded-pill' style={{ backgroundColor: '#bf806b', fontWeight: 'bolder', outlineColor: 'white', fontFamily: 'Montserrat', color: 'black', borderRadius: '30px'}}>
+            <Button variant='secondary' href='https://api.whatsapp.com/send?phone=4427492083' className='px-5 mx-4 rounded-pill' style={{ backgroundColor: '#bf806b', fontWeight: 'bolder', outlineColor: 'white', fontFamily: 'Montserrat', color: 'white', borderRadius: '30px'}}>
+           
   Contacto
 </Button>
        </Nav>
