@@ -134,12 +134,12 @@ const index = () => {
       </Container>
       <ImageContainer>
         <ImageGroup>
-          <Image src="./assets/qro2.jpg" alt="Imagen 1" />
-          <Image2 src="./assets/qro1.jpg" alt="Imagen 2" />
+          <Image src="assets/qro2.jpg" alt="Imagen 1" />
+          <Image2 src="assets/qro1.jpg" alt="Imagen 2" />
         </ImageGroup>
         <ImageGroup>
-          <Image3 src="./assets/qro3.jpg" alt="Imagen 3" />
-          <Image4 src="./assets/qro4.jpg" alt="Imagen 4" />
+          <Image3 src="assets/qro3.jpg" alt="Imagen 3" />
+          <Image4 src="assets/qro4.jpg" alt="Imagen 4" />
         </ImageGroup>
       </ImageContainer>
       <Container>
@@ -148,13 +148,13 @@ const index = () => {
       </Container>
       <ImageContainer>
         <ImageGroup>
-          <Image5 src="./assets/jur1.jpg" alt="Imagen 1" />
-          <Image6 src="./assets/jur2.jpg" alt="Imagen 2" />
+          <Image5 src="assets/jur1.jpg" alt="Imagen 1" />
+          <Image6 src="assets/jur2.jpg" alt="Imagen 2" />
         </ImageGroup>
         <ImageGroup>
-          <Image7 src="./assets/jur3.jpg" alt="Imagen 3" />
-          <Image8 src="./assets/jur4.jpg" alt="Imagen 4" />
-          <Image9 src="./assets/jur5.jpg" alt="Imagen 4" />
+          <Image7 src="assets/jur3.jpg" alt="Imagen 3" />
+          <Image8 src="assets/jur4.jpg" alt="Imagen 4" />
+          <Image9 src="assets/jur5.jpg" alt="Imagen 4" />
         </ImageGroup>
       </ImageContainer>
       <Container>
@@ -163,12 +163,12 @@ const index = () => {
       </Container>
       <ImageContainer>
         <ImageGroup>
-          <Image11 src="./assets/ro1.jpg" alt="Imagen 2" />
-          <Image10 src="./assets/ro2.jpg" alt="Imagen 1" />
+          <Image11 src="assets/ro1.jpg" alt="Imagen 2" />
+          <Image10 src="assets/ro2.jpg" alt="Imagen 1" />
         </ImageGroup>
         <ImageGroup>
-          <Image12 src="./assets/ro3.jpg" alt="Imagen 4" />
-          <Image13 src="./assets/ro4.jpg" alt="Imagen 3" />
+          <Image12 src="assets/ro3.jpg" alt="Imagen 4" />
+          <Image13 src="assets/ro4.jpg" alt="Imagen 3" />
         </ImageGroup>
       </ImageContainer>
     </div>
