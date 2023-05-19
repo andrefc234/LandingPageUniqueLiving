@@ -164,11 +164,11 @@ const index = () => {
       <ImageContainer>
         <ImageGroup>
           <Image11 src="assets/ro1.jpg" alt="Imagen 10" />
-          <Image10 src="assets/ro2.jpg" alt="Imagen 11" />
+          <Image10 src="assets/ro2.JPG" alt="Imagen 11" />
         </ImageGroup>
         <ImageGroup>
-          <Image12 src="assets/ro3.jpg" alt="Imagen 12" />
-          <Image13 src="assets/ro4.jpg" alt="Imagen 13" />
+          <Image12 src="assets/ro3.JPG" alt="Imagen 12" />
+          <Image13 src="assets/ro4.JPG" alt="Imagen 13" />
         </ImageGroup>
       </ImageContainer>
     </div>

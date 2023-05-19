@@ -135,7 +135,7 @@ const MyComponent = () => {
             <Text>Crédito y escrituración</Text>
           </ListItem>
           <ListItem>
-            <Icon src="assets/hall.png" alt="icono3" />
+            <Icon src="assets/Hall.png" alt="icono3" />
             <Text>
               Trámites con municipio <br />y fraccionamiento
             </Text>
