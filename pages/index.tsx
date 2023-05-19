@@ -1,20 +1,20 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import Layout from '../components/Layout'
-import Terceraparte from '../components/Index/TerceraParte'
-import CuartaParte from '../components/Index/CuartaParte'
-import Hero from '../components/Index/Hero'
-import QuintaParte from '../components/Index/QuintaParte/index'
-import SextaParte from '../components/Index/SextaParte'
-import PrimeraParte from '../components/Index/Primeraparte'
-import SegundaParte from '../components/Index/Segundaparte'
-import Info from '../components/MainComponents/Info'
-import Mosaico from '../components/MainComponents/Mosaico'
-import Presentacion from '../components/MainComponents/Presentacion'
-import MosaicoTitle from '../components/MainComponents/MosaicoTitle'
-const inter = Inter({ subsets: ['latin'] })
+import Head from 'next/head';
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+import styles from '@/styles/Home.module.css';
+import Layout from '../components/Layout';
+import Terceraparte from '../components/Index/TerceraParte';
+import CuartaParte from '../components/Index/CuartaParte';
+import Hero from '../components/Index/Hero';
+import QuintaParte from '../components/Index/QuintaParte/index';
+import SextaParte from '../components/Index/SextaParte';
+import PrimeraParte from '../components/Index/Primeraparte';
+import SegundaParte from '../components/Index/Segundaparte';
+import Info from '../components/MainComponents/Info';
+import Mosaico from '../components/MainComponents/Mosaico';
+import Presentacion from '../components/MainComponents/Presentacion';
+import MosaicoTitle from '../components/MainComponents/MosaicoTitle';
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -25,33 +25,32 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-     <Layout>
+      <Layout>
+        <PrimeraParte />
+        <Mosaico
+          paragraph={
+            <>
+              Transformamos tus Sueños en Hogares <br />
+            </>
+          }
+          paragraph2="y "
+          styledspan1="Únicos, Creativos"
+          styledspan2="Funcionales"
+        />
+        <Hero />
+        <MosaicoTitle title="Nuestros Procesos" />
+        <SegundaParte />
 
-     <PrimeraParte/>
-     <Mosaico
-         paragraph={
-        <>
-        Transformamos tus Sueños en Hogares <br/>
-        </>
-         }
-         
-         paragraph2="y "
-         styledspan1="Únicos, Creativos"
-         styledspan2="Funcionales"/>
-     <Hero/>
-     <MosaicoTitle title='Nuestros Procesos'/>
-    <SegundaParte/> 
-
-    <Terceraparte/>
-    <MosaicoTitle title='Proyectos'/>
-        <CuartaParte/>
+        <Terceraparte />
+        <MosaicoTitle title="Proyectos" />
+        <CuartaParte />
         <Presentacion
-    img={"./assets/casacortada.png"}
-    titlespan={" "}
-    title={" "}
-    />
-      <Info/>
-     </Layout>
+          img={'./assets/casacortada.png'}
+          titlespan={' '}
+          title={' '}
+        />
+        <Info />
+      </Layout>
     </>
-  )
+  );
 }

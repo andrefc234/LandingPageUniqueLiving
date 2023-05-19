@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Mosaico from  '../../MainComponents/Mosaico'
+import Mosaico from '../../MainComponents/Mosaico';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -47,8 +47,6 @@ const Title = styled.h2`
   }
 `;
 
-
-
 const ListItem = styled.div`
   display: flex;
   align-items: center;
@@ -66,9 +64,7 @@ const ListItem = styled.div`
   }
 `;
 
-
 const Icon = styled.img`
-  
   width: 60px;
   height: 60px;
 
@@ -117,50 +113,46 @@ const StyledSpan = styled.span`
 const MyComponent = () => {
   return (
     <>
-          <Mosaico
-         paragraph={
-          "Creamos juntos el "
-         }
-         
-         paragraph2={<>
-         que <br /> siempre
-         </>}
-         styledspan1="concepto"
-         styledspan2="soñaste"
-        />
-  
-    <Container>
-      <LeftSide>
-        
-  
-        <ListItem>
-          <Icon src="./assets/instagram.jpg" alt="icono" />
-          <Text>Diseño arquitectónico</Text>
-        </ListItem>
-        <ListItem>
-          <Icon src="./assets/instagram.jpg" alt="icono" />
-          <Text>Crédito y escrituración</Text>
-        </ListItem>
-        <ListItem>
-          <Icon src="./assets/instagram.jpg" alt="icono" />
-          <Text>
-            Trámites con municipio <br />y fraccionamiento
-          </Text>
-        </ListItem>
-        <ListItem>
-          <Icon src="./assets/instagram.jpg" alt="icono" />
-          <Text>Construcción</Text>
-        </ListItem>
-        <ListItem>
-          <Icon src="./assets/instagram.jpg" alt="icono" />
-          <Text>Entrega y garantías</Text>
-        </ListItem>
-      </LeftSide>
-      <RightSide>
-        <Image src="./assets/croquis.png" alt="imagen" />
-       
-      </RightSide>
-    </Container>
+      <Mosaico
+        paragraph={'Creamos juntos el '}
+        paragraph2={
+          <>
+            que <br /> siempre
+          </>
+        }
+        styledspan1="concepto"
+        styledspan2="soñaste"
+      />
+
+      <Container>
+        <LeftSide>
+          <ListItem>
+            <Icon src="./assets/arq.png" alt="icono" />
+            <Text>Diseño arquitectónico</Text>
+          </ListItem>
+          <ListItem>
+            <Icon src="./assets/doc.png" alt="icono" />
+            <Text>Crédito y escrituración</Text>
+          </ListItem>
+          <ListItem>
+            <Icon src="./assets/hall.png" alt="icono" />
+            <Text>
+              Trámites con municipio <br />y fraccionamiento
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Icon src="./assets/foundation.png" alt="icono" />
+            <Text>Construcción</Text>
+          </ListItem>
+          <ListItem>
+            <Icon src="./assets/hotel.png" alt="icono" />
+            <Text>Entrega y garantías</Text>
+          </ListItem>
+        </LeftSide>
+        <RightSide>
+          <Image src="./assets/croquis.png" alt="imagen" />
+        </RightSide>
+      </Container>
     </>
   );
 };
