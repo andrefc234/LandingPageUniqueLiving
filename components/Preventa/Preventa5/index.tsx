@@ -127,25 +127,25 @@ const MyComponent = () => {
       <Container>
         <LeftSide>
           <ListItem>
-            <Icon src="assets/arq.png" alt="icono" />
+            <Icon src="assets/arq.png" alt="icono1" />
             <Text>Diseño arquitectónico</Text>
           </ListItem>
           <ListItem>
-            <Icon src="assets/doc.png" alt="icono" />
+            <Icon src="assets/doc.png" alt="icono2" />
             <Text>Crédito y escrituración</Text>
           </ListItem>
           <ListItem>
-            <Icon src="assets/hall.png" alt="icono" />
+            <Icon src="assets/hall.png" alt="icono3" />
             <Text>
               Trámites con municipio <br />y fraccionamiento
             </Text>
           </ListItem>
           <ListItem>
-            <Icon src="assets/foundation.png" alt="icono" />
+            <Icon src="assets/foundation.png" alt="icono4" />
             <Text>Construcción</Text>
           </ListItem>
           <ListItem>
-            <Icon src="assets/hotel.png" alt="icono" />
+            <Icon src="assets/hotel.png" alt="icono5" />
             <Text>Entrega y garantías</Text>
           </ListItem>
         </LeftSide>

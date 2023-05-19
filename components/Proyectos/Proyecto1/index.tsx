@@ -148,13 +148,13 @@ const index = () => {
       </Container>
       <ImageContainer>
         <ImageGroup>
-          <Image5 src="assets/jur1.jpg" alt="Imagen 1" />
-          <Image6 src="assets/jur2.jpg" alt="Imagen 2" />
+          <Image5 src="assets/jur1.jpg" alt="Imagen 5" />
+          <Image6 src="assets/jur2.jpg" alt="Imagen 6" />
         </ImageGroup>
         <ImageGroup>
-          <Image7 src="assets/jur3.jpg" alt="Imagen 3" />
-          <Image8 src="assets/jur4.jpg" alt="Imagen 4" />
-          <Image9 src="assets/jur5.jpg" alt="Imagen 4" />
+          <Image7 src="assets/jur3.jpg" alt="Imagen 7" />
+          <Image8 src="assets/jur4.jpg" alt="Imagen 8" />
+          <Image9 src="assets/jur5.jpg" alt="Imagen 9" />
         </ImageGroup>
       </ImageContainer>
       <Container>
@@ -163,12 +163,12 @@ const index = () => {
       </Container>
       <ImageContainer>
         <ImageGroup>
-          <Image11 src="assets/ro1.jpg" alt="Imagen 2" />
-          <Image10 src="assets/ro2.jpg" alt="Imagen 1" />
+          <Image11 src="assets/ro1.jpg" alt="Imagen 10" />
+          <Image10 src="assets/ro2.jpg" alt="Imagen 11" />
         </ImageGroup>
         <ImageGroup>
-          <Image12 src="assets/ro3.jpg" alt="Imagen 4" />
-          <Image13 src="assets/ro4.jpg" alt="Imagen 3" />
+          <Image12 src="assets/ro3.jpg" alt="Imagen 12" />
+          <Image13 src="assets/ro4.jpg" alt="Imagen 13" />
         </ImageGroup>
       </ImageContainer>
     </div>
