@@ -136,7 +136,7 @@ const ImageContainer = ({ titlespan, title, img }: Props) => {
             <Image src={img} />
             <ButtonWrapper>
               <Button2>
-              <a href="/mi_archivo.pdf" download="mi_archivo.pdf" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <a href="/mi_archivo.pdf" download="mi_archivo.pdf" style={{ textDecoration: 'none', color: 'white' }}>
   <HiOutlinePresentationChartLine className="mx-1" style={{ marginBottom: 4 }} />
   Presentación
 </a>
