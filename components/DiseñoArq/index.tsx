@@ -33,7 +33,9 @@ export default function index(): JSX.Element {
       <div>
         <Mosaico
          paragraph={
-          " ¡Construyendo con estructura metálica te aseguramos mayor"
+        ¡Construyendo con estructura metálica te aseguramos mayor
+        <br/>
+        
          }
          
          paragraph2="y "
