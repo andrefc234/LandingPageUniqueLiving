@@ -25,7 +25,7 @@ const MyComponent = () => {
   return (
     <Container>
       <Title>Recorrido Virtual</Title>
-      <Video src="./assets/recorrido.mp4" controls />
+      <Video src="https://www.youtube.com/embed/gJHzVZCgznA" controls />
     </Container>
   );
 };
