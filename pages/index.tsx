@@ -33,8 +33,8 @@ export default function Home() {
               Transformamos tus Sueños en Hogares <br />
             </>
           }
-          paragraph2="y "
-          styledspan1="Únicos, Creativos"
+          paragraph2=""
+          styledspan1="Únicos, Creativos y"
           styledspan2="Funcionales"
         />
         <Hero />
