@@ -132,7 +132,7 @@ const MyComponent = () => {
           </ListItem>
           <ListItem>
             <Icon src="assets/doc.png" alt="icono2" />
-            <Text>Crédito y escrituración</Text>
+            <Text>Crédito</Text>
           </ListItem>
           <ListItem>
             <Icon src="assets/Hall.png" alt="icono3" />
