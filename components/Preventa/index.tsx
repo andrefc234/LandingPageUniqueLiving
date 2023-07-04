@@ -11,7 +11,7 @@ import Gallery from '../MainComponents/Gallery';
 import Mosaico from '../MainComponents/Mosaico';
 import img from '../../public/assets/rg.jpg'
 export default function index(): JSX.Element {
-  const images = ["./assets/fachada.jpg" , './assets/_28012018_DSC036112.jpg','./assets/iMG_20171108_09494912.jpg'];
+  const images = ["./assets/fachada.jpg" , './assets/_28012018_DSC036112.jpg','./assets/fac.png'];
   return (
     <div>
       <Navb />
