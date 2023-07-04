@@ -14,6 +14,7 @@ import Info from '../components/MainComponents/Info';
 import Mosaico from '../components/MainComponents/Mosaico';
 import Presentacion from '../components/MainComponents/Presentacion';
 import MosaicoTitle from '../components/MainComponents/MosaicoTitle';
+import Projects from '../components/Index/Projects'
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
       </Head>
       <Layout>
         <PrimeraParte />
+        
         <Mosaico
           paragraph={
             <>
@@ -38,12 +40,14 @@ export default function Home() {
           styledspan2="Funcionales"
         />
         <Hero />
+        <MosaicoTitle title="Proyectos" />
+        <Projects/>
         <MosaicoTitle title="Nuestros Procesos" />
         <SegundaParte />
 
         <Terceraparte />
-        <MosaicoTitle title="Proyectos" />
-        <CuartaParte />
+       
+      
         <Presentacion
           img={'./assets/casacortada.png'}
           titlespan={' '}
