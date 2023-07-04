@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import YouTube from 'react-youtube';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -22,10 +22,20 @@ const Video = styled.video`
 `;
 
 const MyComponent = () => {
+  const opts = {
+      height: '390',
+      width: '640',
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 1,
+      },
+    };
   return (
     <Container>
       <Title>Recorrido Virtual</Title>
-      <Video src="https://www.youtube.com/embed/gJHzVZCgznA" controls />
+   <div className='my-2'>
+       <YouTube videoId="gJHzVZCgznA" opts={opts} />
+   </div>
     </Container>
   );
 };
