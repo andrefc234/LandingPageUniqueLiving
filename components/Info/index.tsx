@@ -86,7 +86,7 @@ const Horario: React.FC = () => {
       <br />
       <HorarioText>Lunes-Viernes: 9:00hrs-19:00hrs</HorarioText>
       <br />
-      <HorarioText>Sabado: 10:00hrs-14:00hrs</HorarioText>
+     
     </HorarioWrapper>
   );
 };
@@ -130,7 +130,7 @@ const ContactList = ({ instagram }: ContactProp) => {
 
         <ContactLink href="mailto:example@mail.com">
           {' '}
-          example@mail.com
+          ventas@unique-living.com.mx
         </ContactLink>
       </ContactItemWrapper>
     </ContactListWrapper>
