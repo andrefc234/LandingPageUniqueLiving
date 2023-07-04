@@ -31,16 +31,14 @@ export default function index(): JSX.Element {
       />
       </div>
       <div>
-        <Mosaico
-         paragraph={
-        ¡Construyendo con estructura metálica te aseguramos mayor
-        <br/>
-        
-         }
-         
-         paragraph2="y "
-         styledspan1="seguridad estructural"
-         styledspan2="reducción de costos!"/>
+      <Mosaico
+  paragraph={
+    "¡Construyendo con estructura metálica te aseguramos mayor"
+  }
+  paragraph2=" y "
+  styledspan1="seguridad estructural"
+  styledspan2="reducción de costos!"
+/>
       </div>
       <div>
       <MasInfo
