@@ -76,11 +76,7 @@ const MyComponent = () => {
       <br />
       <br />
       <br />
-      <Paragraph>
-        Te ayudamos a conseguir el diseño personalizado que tanto buscas. <br />
-        Además, si ya cuentas con un terreno, nosotros nos encargamos de <br />
-        edificar el espacio en el que te vas a sentir único.
-      </Paragraph>
+   
     </Container>
   );
 };
