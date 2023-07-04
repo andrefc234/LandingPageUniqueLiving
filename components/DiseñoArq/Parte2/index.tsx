@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import Mosaico from '@/components/MainComponents/Mosaico';
 const Container = styled.div`
   display: grid;
   place-items: center;
@@ -56,6 +56,7 @@ const Icon2 = styled.img`
 const MyComponent = () => {
   return (
     <Container>
+    <Mosaico title='Servicios'/>
       <IconSection >
         <IconWrapper >
           <Icon2 src="./assets/arq.png" alt="icon1" />
