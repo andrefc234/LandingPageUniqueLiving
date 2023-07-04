@@ -41,7 +41,7 @@ export default function index(): JSX.Element {
         <Preventa4/>
       </div>
       <div>
-         <Preventa2 />
+      
       </div>
       <div>
       <Presentacion
