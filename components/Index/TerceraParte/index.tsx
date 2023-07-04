@@ -37,7 +37,7 @@ const ServiceImage = styled(Image)`
   margin-left:10%;
   object-fit: cover;
   height: 150%;
-  
+  border-radius: 10px;
   @media (max-width: 640px) {
     width: 100%;
     height: 100%;
@@ -62,7 +62,7 @@ const ServiceTitle = styled.h3`
   height: 100%;
 
   box-shadow: 5px 5px 10px  black;
-  
+  border-radius: 10px;
 
 
 
@@ -91,7 +91,7 @@ function Terceraparte() {
       <animated.div ref={ref} style={props}>
     <div>
       <div style={{backgroundImage:'url("/assets/mosaico1.jpg")'}} className='text-center p-5'>
-        <h1 className="text-3xl font-bold mb-0" style={{fontFamily:'Montserrat'}}>Nuestros Servicios</h1>
+        <h1 className="text-3xl font-bold mb-0" style={{fontFamily:'Montserrat'}}>Servicios</h1>
       </div>
       <ImageContainer>
       
