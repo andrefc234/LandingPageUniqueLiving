@@ -22,7 +22,8 @@ export default function index(): JSX.Element {
  </>}
  />
       <div>
-        <Preventa2 />
+         <Preventa5/>
+      
       </div>
       <div>
         <Gallery  images={images} height='100%' marginB='0%' />
@@ -40,7 +41,7 @@ export default function index(): JSX.Element {
         <Preventa4/>
       </div>
       <div>
-        <Preventa5/>
+         <Preventa2 />
       </div>
       <div>
       <Presentacion
