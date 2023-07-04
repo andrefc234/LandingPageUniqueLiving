@@ -70,7 +70,7 @@ function index() {
           <Col>
             <Service>
               <ServiceImage
-                src="./assets/iMG_20171108_09494912.jpg"
+                src="./assets/fac.png"
                 alt="Imagen 3"
               />
             </Service>
