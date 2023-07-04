@@ -73,7 +73,7 @@ const MyCarousel = () => {
               className="intro"
             >
               <StyledCarouselItem>
-                <img src="/assets/cantera.png" alt="First slide" />
+                <img src="/assets/qro1.jpg" alt="First slide" />
                 <Carousel.Caption className="text-left mb-5">
                   <p
                     className="text-white ml-3 h1 sm:text-4xl md:text-5xl"
@@ -92,7 +92,7 @@ const MyCarousel = () => {
                       textShadow: '40px 40px 80px black',
                     }}
                   >
-                    Casa Cantera
+                  
                   </p>
                   <p
                     className="text-white ml-3 h6 sm:text-2xl md:text-3xl"
