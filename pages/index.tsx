@@ -29,16 +29,7 @@ export default function Home() {
       <Layout>
         <PrimeraParte />
         
-        <Mosaico
-          paragraph={
-            <>
-              Transformamos tus Sueños en Hogares <br />
-            </>
-          }
-          paragraph2=""
-          styledspan1="Únicos, Creativos y"
-          styledspan2="Funcionales"
-        />
+       
         <Hero />
         <MosaicoTitle title="Proyectos" />
         <Projects/>
